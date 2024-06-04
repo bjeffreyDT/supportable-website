@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supportable | ROI Calculator</title>
+    <meta name="description" content="AIMass Tailwind based SASS Template" />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets/img/supportable-white_background_favicon.ico" />
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="assets/fonts/iconfonts/font-awesome/stylesheet.css" />
+    <!-- Site font -->
+    <link rel="stylesheet" href="assets/fonts/webfonts/inter/stylesheet.css" />
+    <link rel="stylesheet" href="assets/fonts/webfonts/plus-jakarta-sans/stylesheet.css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/menu.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Development css -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Production css -->
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+</head>
+
+<body>
+    <div class="page-wrapper relative z-[1] bg-ColorOffWhite">
+        <main class="main-wrapper relative overflow-hidden">
+            <!--...::: Header Start :::... -->
+            <header class="site-header site-header--absolute is--white py-3" id="sticky-menu">
+                <div class="container-default">
+                    <div class="flex items-center justify-between gap-x-8">
+                        <!-- Header Logo -->
+                        <a href="index.html">
+                            <img src="assets/img/logos/supportable-horizontal.svg" alt="Supportable" width="250"
+                                height="auto" />
+                        </a>
+                        <!-- Header Logo -->
+
+                        <!-- Header Navigation -->
+                        <div class="menu-block-wrapper">
+                            <div class="menu-overlay"></div>
+                            <nav class="menu-block" id="append-menu-header">
+                                <div class="mobile-menu-head">
+                                    <div class="go-back">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </div>
+                                    <div class="current-menu-title"></div>
+                                    <div class="mobile-menu-close">&times;</div>
+                                </div>
+                                <ul class="site-menu-main">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link-item">Home</a>
+                                    </li>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link-item">About</a>
+                                    </li>
+                                    <li class="nav-item nav-item-has-children">
+                                        <a href="#" class="nav-link-item drop-trigger">Features
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="sub-menu" id="submenu-2">
+                                            <li class="sub-menu--item">
+                                                <a href="features.html">Features</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="integrations.html">Integrations</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item nav-item-has-children">
+                                        <a href="#" class="nav-link-item drop-trigger">Resources
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="sub-menu" id="submenu-2">
+                                            <li class="sub-menu--item">
+                                                <a href="features.html">Interoperability</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="service-details.html">Developer Program</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="pricing.html">Pricing</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="faq-3.html">FAQ</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="roi-calculator.html">ROI Calculator</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" class="nav-link-item">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Header Navigation -->
+
+                        <!-- Header User Event -->
+                        <div class="flex items-center gap-6">
+                            <a href="discovery.html" class="group relative z-10 hidden sm:inline-block" target="_blank">
+                                <div class="btn rounded-[3px] border-2 border-[#0E0E0E] bg-brandPurple text-white">
+                                    Get Started With Us
+                                </div>
+                                <div
+                                    class="absolute inset-0 -z-10 translate-x-[5px] translate-y-[5px] rounded-[3px] bg-[#0E0E0E] transition-all duration-300 ease-linear group-hover:translate-x-0 group-hover:translate-y-0">
+                                </div>
+                            </a>
+                            <!-- Responsive Offcanvas Menu Button -->
+                            <div class="block lg:hidden">
+                                <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Header User Event -->
+                    </div>
+                </div>
+            </header>
+            <!--...::: Header End :::... -->
+
+            <!--...::: ROI Section Start :::... -->
+            <section class="section-signin">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <div class="mx-auto">
+                            <div class="flex flex-col items-center justify-center text-center">
+                                <!-- Section Wrapper -->
+                                <div>
+                                    <!-- Section Block -->
+                                    <div>
+                                        <div class="h-22"></div>
+                                        <p class="text-ColorBlack/80 text-2xl">
+                                            You can schedule a discovery meeting with one of our team members
+                                            <span class="highlight-underline">right now.</span>
+                                        </p>
+                                    </div>
+                                    <!-- Section Block -->
+                                </div>
+                                <!-- Section Wrapper -->
+                            </div>
+                            <div class="h-5"></div>
+
+                            <!--...::: CTA Section Start :::... -->
+                            <div class="grid">
+                                <!-- INPUT -->
+                                <section class="section-roi-input">
+                                    <!-- Section Container -->
+                                    <div class="container-default">
+                                        <div class="relative z-10 rounded-[10px] bg-[#f6d788]">
+                                            <!-- Section Space -->
+                                            <div class="section-space">
+                                                <div class="px-5 sm:px-10">
+                                                    <!-- Section Content Wrapper -->
+                                                    <div class="jos mb-8 lg:mb-[50px]">
+                                                        <!-- Section Content Block -->
+
+                                                        <!--...::: Contact Section Start :::... -->
+                                                        <div class="section-contact">
+                                                            <!-- Section Space -->
+                                                            <div class="section-space">
+                                                                <!-- Section Container -->
+                                                                <div class="container-default">
+                                                                    <!-- Contact Form Block -->
+                                                                    <div class="mx-auto max-w-[700px] mb-8">
+                                                                        <div class="mb-5">
+                                                                            <h4
+                                                                                class="text-center font-Filson font-bold leading-[1.16] -tracking-[0.5px] text-[#0E0E0E]">
+                                                                                Let's play with some numbers here...
+                                                                            </h4>
+                                                                        </div>
+                                                                        <p class="text-center text-[#2c2c2c]">
+                                                                            Placeholder
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="jos mx-auto max-w-[996px]">
+                                                                        <form action="https://formspree.io/f/{form_id}"
+                                                                            method="post">
+                                                                            <!-- From Group List -->
+                                                                            <div class="flex flex-col gap-6">
+                                                                                <div class="grid grid-cols-2 gap-6">
+                                                                                    <!-- Form Group Item-->
+                                                                                    <div class="form-group">
+                                                                                        <label id="avgDaysLabel"
+                                                                                            class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Current
+                                                                                            Avgerage Days to Process a
+                                                                                            Referral</label>
+                                                                                        <input type="number"
+                                                                                            name="avgDays" id="avgDays"
+                                                                                            value="20"
+                                                                                            class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                                            required />
+                                                                                    </div>
+                                                                                    <!-- Form Group Item-->
+                                                                                    <!-- Form Group Item-->
+                                                                                    <div class="form-group">
+                                                                                        <label id="referralsPerDayLabel"
+                                                                                            class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Number
+                                                                                            of Referrals Processed Per
+                                                                                            Days
+                                                                                        </label>
+                                                                                        <input type="number"
+                                                                                            name="referralsPerDay"
+                                                                                            id="referralsPerDay"
+                                                                                            value="2"
+                                                                                            class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                                            required />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- Form Group Item-->
+                                                                                <div class="grid grid-cols-2 gap-6">
+                                                                                    <!-- Form Group Item-->
+                                                                                    <div class="form-group">
+                                                                                        <label id="rateLabel"
+                                                                                            class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Rate
+                                                                                            for Service (in dollars)
+                                                                                        </label>
+                                                                                        <input type="number" name="rate"
+                                                                                            id="rate" value="150"
+                                                                                            class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                                            required />
+                                                                                    </div>
+                                                                                    <!-- Form Group Item-->
+                                                                                    <!-- Form Group Item-->
+                                                                                    <div class="form-group">
+                                                                                        <label id="freqLabel"
+                                                                                            class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Frequency
+                                                                                            of Service</label>
+                                                                                        <select id="freq"
+                                                                                            placeholder="What number can we best reach you at?"
+                                                                                            class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                                            required>
+                                                                                            <option value='365'>Daily
+                                                                                            </option>
+                                                                                            <option value='52'>Once per
+                                                                                                Week
+                                                                                            </option>
+                                                                                            <option value='104'>Twice
+                                                                                                per
+                                                                                                Week</option>
+                                                                                            <option value='156'>Three
+                                                                                                Times
+                                                                                                per Week</option>
+                                                                                            <option value='208'>Four
+                                                                                                Times
+                                                                                                per Week</option>
+                                                                                            <option value='260'
+                                                                                                selected>
+                                                                                                Five Times per Week
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                    <!-- Form Group Item-->
+                                                                                </div>
+                                                                                <p id='billedDaysLabel'>Billed
+                                                                                    Days: <span id='billedDays'
+                                                                                        class="highlight-underline"></span>
+                                                                                </p>
+                                                                                <div class="form-group">
+                                                                                    <label id="decreaseLabel"
+                                                                                        class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Percent
+                                                                                        Decrease in Days to Process
+                                                                                        Referral</label>
+                                                                                    <select id="decrease"
+                                                                                        placeholder="What number can we best reach you at?"
+                                                                                        class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                                        required>
+                                                                                        <option value='.1'>10%</option>
+                                                                                        <option value='.2'>20%</option>
+                                                                                        <option value='.3' selected>30%
+                                                                                        </option>
+                                                                                        <option value='.4'>40%</option>
+                                                                                        <option value='.5'>50%</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <!-- Form Group Item-->
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <!-- Contact Form Block -->
+                                                                </div>
+                                                                <!-- Section Container -->
+                                                            </div>
+                                                            <!-- Section Space -->
+                                                        </div>
+                                                        <!--...::: Contact Section End :::... -->
+                                                        <!-- Section Content Block -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Section Space -->
+                                        </div>
+                                    </div>
+                                    <!-- Section Container -->
+                                    <!-- Section Background -->
+                                </section>
+                                <div class="h-10"></div>
+                                <!-- OUTPUT -->
+                                <section class="section-roi-output">
+                                    <!-- Section Container -->
+                                    <div class="container-default">
+                                        <div class="relative z-10 rounded-[10px] bg-[#f6d788]">
+                                            <!-- Section Space -->
+                                            <div class="section-space">
+                                                <div class="px-5 sm:px-10">
+                                                    <!-- Section Content Wrapper -->
+                                                    <div class="jos mb-8 lg:mb-[50px]">
+                                                        <!-- Section Content Block -->
+
+                                                        <div class='row justify-content-center'>
+                                                            <div class="w-[70%]">
+                                                                <h4> RETURN ON INVESTMENT <br />
+                                                                    With Supportable</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row justify-content-center">
+                                                            <div class="mySection">
+                                                                <label id='decreaseDaysLabel'>Decrease in Days per
+                                                                    Referral</label>
+                                                                &nbsp;<span id='decreaseDays'></span>
+                                                                <br />
+                                                                <br />
+
+                                                                <label id='dailyRevAddLabel'>Revenue Increase Per Day,
+                                                                    Per Referral <br /> <i>(Decrease in Days x
+                                                                        Daily
+                                                                        Rate)</i></label>
+                                                                <br /><span id='dailyRevAdd'
+                                                                    class='result-bottomLine'></span>
+                                                                <br />
+                                                                <br />
+
+                                                                <label id='annualRevAddLabel'>Annual Revenue Increase
+                                                                    Per Referral <br /> <i>(Daily Revenue Increase
+                                                                        x
+                                                                        Billed Days)</i></label>
+                                                                <br /><span id='annualRevAdd'
+                                                                    class='result-bottomLine'></span>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Section Space -->
+
+                                                <!-- Background Shape -->
+                                                <div class="absolute right-[10px] top-8 -z-10 xl:inline-block">
+                                                    <dotlottie-player
+                                                        src="https://lottie.host/5b653235-11f7-44dd-854d-f9a74a56946a/c6osYG9oqG.json"
+                                                        background="transparent" speed="1"
+                                                        style="width: 150px; height: 150px" direction="1"
+                                                        playMode="normal" loop autoplay></dotlottie-player>
+                                                </div>
+                                            </div>
+                                            <!-- Section Container -->
+                                            <!-- Section Background -->
+                                </section>
+                            </div>
+                            <!--...::: CTA Section End :::... -->
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: ROI Section End :::... -->
+        </main>
+    </div>
+
+    <!--Vendor js-->
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Lottie js -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+    <!-- Calulator js -->
+    <script src='assets/js/revenue-calculator.js'></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
+        integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'
+        crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
+        integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1'
+        crossorigin='anonymous'></script>
+
+</body>
+
+</html>

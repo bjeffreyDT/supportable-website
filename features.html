@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supportable | The features that bring your referral, admission, intake, and outreach process to life.</title>
+    <meta name="description" content="See how Supportable can organize and centralize your front-end. Get your intake and outreach teams on the same page." />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets/img/supportable-white_background_favicon.ico" />
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="assets/fonts/iconfonts/font-awesome/stylesheet.css" />
+    <!-- Site font -->
+    <link rel="stylesheet" href="assets/fonts/webfonts/inter/stylesheet.css" />
+    <link rel="stylesheet" href="assets/fonts/webfonts/plus-jakarta-sans/stylesheet.css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/menu.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Development css -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Production css -->
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+</head>
+
+<body>
+    <div class="page-wrapper relative z-[1] bg-white">
+        <!--...::: Header Start :::... -->
+        <header class="site-header site-header--sticky is--white py-1 bg-ColorGreenOpacity" id="sticky-menu">
+            <div class="container-default">
+                <div class="flex items-center justify-between gap-x-8">
+                    <!-- Header Logo -->
+                    <a href="index.html" class="">
+                        <img src="assets/img/logos/supportable-horizontal.svg" alt="Supportable" width="250"
+                            height="auto" />
+                    </a>
+                    <!-- Header Logo -->
+
+                    <!-- Header Navigation -->
+                    <div class="menu-block-wrapper">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu-block" id="append-menu-header">
+                            <div class="mobile-menu-head">
+                                <div class="go-back">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="site-menu-main">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link-item">Home</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link-item">About</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="features.html" class="nav-link-item drop-trigger">Features
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-2">
+                                        <li class="sub-menu--item">
+                                            <a href="features.html">Features</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="integrations.html">Integrations</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger">Resources
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-2">
+                                        <li class="sub-menu--item">
+                                            <a href="features.html">Interoperability</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="service-details.html">Developer Program</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="pricing.html">Pricing</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="faq.html">FAQ</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="roi-calculator.html">ROI Calculator</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link-item">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Header Navigation -->
+
+                    <!-- Header User Event -->
+                    <div class="flex items-center gap-6">
+                        <a href="discovery.html" class="group relative z-10 hidden sm:inline-block" target="_blank">
+                            <div class="btn rounded-[3px] border-2 border-[#0E0E0E] bg-brandPurple text-white">
+                                Get Started With Us
+                            </div>
+                            <div
+                                class="absolute inset-0 -z-10 translate-x-[5px] translate-y-[5px] rounded-[3px] bg-[#0E0E0E] transition-all duration-300 ease-linear group-hover:translate-x-0 group-hover:translate-y-0">
+                            </div>
+                        </a>
+                        <!-- Responsive Offcanvas Menu Button -->
+                        <div class="block lg:hidden">
+                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Header User Event -->
+                </div>
+            </div>
+        </header>
+        <!--...::: Header End :::... -->
+
+        <main class="main-wrapper relative overflow-hidden bg-ColorGreen">
+
+            <!--...::: CORE FEATURES Section Start :::... -->
+            <section class="section-feature mt-[60px] bg-ColorGreen pt-28">
+                <!-- Section Space -->
+                <div class="section-space" id="feature-container">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Section Content Wrapper -->
+                        <div class="jos mb-[60px] xl:mb-20" data-jos_delay="0">
+                            <div class="mx-auto max-w-full">
+                                <div class="mb-5">
+                                    <h2
+                                        class="text-center font-Filson text-4xl font-bold leading-[1.16] -tracking-[0.5px] text-[#0E0E0E] lg:text-5xl xl:text-[52px] xxl:text-[52px]">
+                                        These 4 Core Features are our bread and butter.
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Feature List -->
+                        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+                            <button class="jos" data-jos_delay="0" onclick=toggleFeature(1)>
+                                    <div class="hover-solid-shadow h-full text-center" style="cursor: pointer;">
+                                        <div
+                                            class="flex h-full flex-col gap-[30px] rounded-[10px] border-2 border-[#0E0E0E] bg-ColorGreen p-5 pr-[30px] lg:flex-row">
+                                            <div class="flex-1">
+                                                <div
+                                                    class="core-feature-button font-Filson text-lg font-semibold text-[#0E0E0E] lg:text-lg">
+                                                    Process<br />Customization
+                                                </div>
+                                                <!-- <p class="text-[#2C2C2C]">
+                                                We built this thing out of pure necessity.
+                                                Other CRMs are too generalized, built to meet a much, much broader
+                                                audience.
+                                            </p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                            </button>
+                            <button class="jos" data-jos_delay="0.3" onclick=toggleFeature(2)>
+                                    <div class="hover-solid-shadow h-full text-center" style="cursor: pointer;">
+                                        <div
+                                            class="flex h-full flex-col gap-[30px] rounded-[10px] border-2 border-[#0E0E0E] bg-ColorGreen p-5 pr-[30px] lg:flex-row">
+                                            <div class="flex-1">
+                                                <div
+                                                    class="core-feature-button font-Filson text-lg font-semibold text-[#0E0E0E] lg:text-lg">
+                                                    Referral and Contact<br />Tracking
+                                                </div>
+                                                <!-- <p class="text-[#2C2C2C]">
+                                                Supportable delivers data like no other. It's built by people who needed
+                                                to capture
+                                                the relevant data for this industry because nothing else did.
+                                            </p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                            </button>
+                            <button class="jos" data-jos_delay="0.6" onclick=toggleFeature(3)>
+                                    <div class="hover-solid-shadow h-full text-center" style="cursor: pointer;">
+                                        <div
+                                            class="flex h-full flex-col gap-[30px] rounded-[10px] border-2 border-[#0E0E0E] bg-ColorGreen p-5 pr-[30px] lg:flex-row">
+                                            <div class="flex-1 vertical-middle">
+                                                <div
+                                                    class="core-feature-button font-Filson text-lg font-semibold text-[#0E0E0E] lg:text-lg">
+                                                    Full-circle<br />reporting
+                                                </div>
+                                                <!-- <p class="text-[#2C2C2C]">
+                                                No fuss. No add-ons. No additional pricing. HIPAA compliance is in the
+                                                front of our minds.
+                                            </p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                            </button>
+                            <button class="jos" data-jos_delay="0.9" onclick=toggleFeature(4)>
+                                    <div class="hover-solid-shadow h-full text-center" style="cursor: pointer;">
+                                        <div
+                                            class="flex h-full flex-col gap-[30px] rounded-[10px] border-2 border-[#0E0E0E] bg-ColorGreen p-5 pr-[30px] lg:flex-row">
+                                            <div class="flex-1">
+                                                <div
+                                                    class="core-feature-button font-Filson text-lg font-semibold text-[#0E0E0E] lg:text-lg">
+                                                    Single-Point Eligibility Verification
+                                                </div>
+                                                <!-- <p class="text-[#2C2C2C]">
+                                                We maintain your data. Once your set up, your administrators have very
+                                                little to keep up with.
+                                            </p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--...::: CORE FEATURES Section End :::... -->
+
+            <!-- Horizontal Separator -->
+            <div class="horizontal-line bg-ColorBlack"></div>
+
+            <!--...::: Service Hero Section Start :::... -->
+            <section class="section-about-hero">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-custom has-container-custom">
+                        <!-- CORE FEATURE 1 -->
+                        <div id="core-feature-1"
+                            class="grid items-center gap-10 lg:grid-cols-2 lg:gap-[60px] xl:gap-[100px] xxl:grid-cols-[1fr_minmax(0,_1.1fr)] core-feature-item">
+                            <!-- About Hero Image Block -->
+                            <div class="jos order-2 lg:order-1" data-jos_animation="fade-left" data-jos_delay="0">
+                                <div
+                                    class="relative flex items-center justify-center mx-auto lg:mx-0 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-full">
+                                    <img src="assets/img/th-1/about-hero-2.jpg" alt="hero image" width="580"
+                                        height="550" class="h-auto w-full" />
+                                    <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+                                        class="group group absolute flex h-[100px] w-[100px] items-center justify-center rounded-[50%] bg-white text-ColorBlue"
+                                        aria-label="video-play">
+                                        <span
+                                            class="text-2xl transition-all duration-300 ease-linear group-hover:scale-110"><i
+                                                class="fa-solid fa-play"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- About Hero Image Block -->
+                            <!-- About Hero Content Block -->
+                            <div class="jos order-1 lg:order-2" data-jos_animation="fade-right" data-jos_delay="0.3">
+                                <!-- Section Wrapper -->
+                                <div>
+                                    <!-- Section Block -->
+                                    <div class="mb-5">
+                                        <h2>
+                                            Feature 1
+                                        </h2>
+                                    </div>
+                                    <!-- Section Block -->
+                                    <p>
+                                        SINCE 1998, we transform bold business ideas into
+                                        exceptional digital products. We ideate, design, and
+                                        develop data-driven digital products made to answer
+                                        business challenges.
+                                    </p>
+                                    <!-- Horizontal Line Separator -->
+                                    <div class="my-7 h-px w-full bg-ColorBlack opacity-10 xl:my-10 xxl:my-14"></div>
+                                    <!-- BlockQuote Block-->
+                                    <div>
+                                        <blockquote class="mb-6 font-semibold italic text-opacity-80">
+                                            “We love what we do & create partnerships with our
+                                            clients to ensure their digital transformation is
+                                            positioned for long-term success.”
+                                        </blockquote>
+                                        <div class="flex flex-col items-center gap-4 lg:flex-row">
+                                            <img src="assets/img/th-1/about-hero-user-blockquote-img.jpg"
+                                                alt="about-hero-user-blockquote-img" width="60" height="60"
+                                                class="mx-auto h-[60px] w-[60px] rounded-[50%] lg:mx-0" />
+                                            <div>
+                                                <span class="block font-semibold">Karen Lynn</span>
+                                                <span class="text-sm text-opacity-80">CEO & Co-founder @ Company</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Section Wrapper -->
+                            </div>
+                            <!-- About Hero Content Block -->
+                        </div>
+                        <!-- CORE FEATURE 2 -->
+                        <div id="core-feature-2"
+                            class="grid items-center gap-10 lg:grid-cols-2 lg:gap-[60px] xl:gap-[100px] xxl:grid-cols-[1fr_minmax(0,_1.1fr)] core-feature-item hidden">
+                            <!-- About Hero Image Block -->
+                            <div class="jos order-2 lg:order-1" data-jos_animation="fade-left" data-jos_delay="0">
+                                <div
+                                    class="relative flex items-center justify-center mx-auto lg:mx-0 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-full">
+                                    <img src="assets/img/th-1/about-hero-2.jpg" alt="hero image" width="580"
+                                        height="550" class="h-auto w-full" />
+                                    <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+                                        class="group group absolute flex h-[100px] w-[100px] items-center justify-center rounded-[50%] bg-white text-ColorBlue"
+                                        aria-label="video-play">
+                                        <span
+                                            class="text-2xl transition-all duration-300 ease-linear group-hover:scale-110"><i
+                                                class="fa-solid fa-play"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- About Hero Image Block -->
+                            <!-- About Hero Content Block -->
+                            <div class="jos order-1 lg:order-2" data-jos_animation="fade-right" data-jos_delay="0.3">
+                                <!-- Section Wrapper -->
+                                <div>
+                                    <!-- Section Block -->
+                                    <div class="mb-5">
+                                        <h2>
+                                            Feature 2
+                                        </h2>
+                                    </div>
+                                    <!-- Section Block -->
+                                    <p>
+                                        SINCE 1998, we transform bold business ideas into
+                                        exceptional digital products. We ideate, design, and
+                                        develop data-driven digital products made to answer
+                                        business challenges.
+                                    </p>
+                                    <!-- Horizontal Line Separator -->
+                                    <div class="my-7 h-px w-full bg-ColorBlack opacity-10 xl:my-10 xxl:my-14"></div>
+                                    <!-- BlockQuote Block-->
+                                    <div>
+                                        <blockquote class="mb-6 font-semibold italic text-opacity-80">
+                                            “We love what we do & create partnerships with our
+                                            clients to ensure their digital transformation is
+                                            positioned for long-term success.”
+                                        </blockquote>
+                                        <div class="flex flex-col items-center gap-4 lg:flex-row">
+                                            <img src="assets/img/th-1/about-hero-user-blockquote-img.jpg"
+                                                alt="about-hero-user-blockquote-img" width="60" height="60"
+                                                class="mx-auto h-[60px] w-[60px] rounded-[50%] lg:mx-0" />
+                                            <div>
+                                                <span class="block font-semibold">Karen Lynn</span>
+                                                <span class="text-sm text-opacity-80">CEO & Co-founder @ Company</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Section Wrapper -->
+                            </div>
+                            <!-- About Hero Content Block -->
+                        </div>
+                        <!-- CORE FEATURE 3 -->
+                        <div id="core-feature-3"
+                            class="grid items-center gap-10 lg:grid-cols-2 lg:gap-[60px] xl:gap-[100px] xxl:grid-cols-[1fr_minmax(0,_1.1fr)] core-feature-item hidden">
+                            <!-- About Hero Image Block -->
+                            <div class="jos order-2 lg:order-1" data-jos_animation="fade-left" data-jos_delay="0">
+                                <div
+                                    class="relative flex items-center justify-center mx-auto lg:mx-0 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-full">
+                                    <img src="assets/img/th-1/about-hero-2.jpg" alt="hero image" width="580"
+                                        height="550" class="h-auto w-full" />
+                                    <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+                                        class="group group absolute flex h-[100px] w-[100px] items-center justify-center rounded-[50%] bg-white text-ColorBlue"
+                                        aria-label="video-play">
+                                        <span
+                                            class="text-2xl transition-all duration-300 ease-linear group-hover:scale-110"><i
+                                                class="fa-solid fa-play"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- About Hero Image Block -->
+                            <!-- About Hero Content Block -->
+                            <div class="jos order-1 lg:order-2" data-jos_animation="fade-right" data-jos_delay="0.3">
+                                <!-- Section Wrapper -->
+                                <div>
+                                    <!-- Section Block -->
+                                    <div class="mb-5">
+                                        <h2>
+                                            Feature 3
+                                        </h2>
+                                    </div>
+                                    <!-- Section Block -->
+                                    <p>
+                                        SINCE 1998, we transform bold business ideas into
+                                        exceptional digital products. We ideate, design, and
+                                        develop data-driven digital products made to answer
+                                        business challenges.
+                                    </p>
+                                    <!-- Horizontal Line Separator -->
+                                    <div class="my-7 h-px w-full bg-ColorBlack opacity-10 xl:my-10 xxl:my-14"></div>
+                                    <!-- BlockQuote Block-->
+                                    <div>
+                                        <blockquote class="mb-6 font-semibold italic text-opacity-80">
+                                            “We love what we do & create partnerships with our
+                                            clients to ensure their digital transformation is
+                                            positioned for long-term success.”
+                                        </blockquote>
+                                        <div class="flex flex-col items-center gap-4 lg:flex-row">
+                                            <img src="assets/img/th-1/about-hero-user-blockquote-img.jpg"
+                                                alt="about-hero-user-blockquote-img" width="60" height="60"
+                                                class="mx-auto h-[60px] w-[60px] rounded-[50%] lg:mx-0" />
+                                            <div>
+                                                <span class="block font-semibold">Karen Lynn</span>
+                                                <span class="text-sm text-opacity-80">CEO & Co-founder @ Company</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Section Wrapper -->
+                            </div>
+                            <!-- About Hero Content Block -->
+                        </div>
+                        <!-- CORE FEATURE 4 -->
+                        <div id="core-feature-4"
+                            class="grid items-center gap-10 lg:grid-cols-2 lg:gap-[60px] xl:gap-[100px] xxl:grid-cols-[1fr_minmax(0,_1.1fr)] core-feature-item hidden">
+                            <!-- About Hero Image Block -->
+                            <div class="jos order-2 lg:order-1" data-jos_animation="fade-left" data-jos_delay="0">
+                                <div
+                                    class="relative flex items-center justify-center mx-auto lg:mx-0 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-full">
+                                    <img src="assets/img/th-1/about-hero-2.jpg" alt="hero image" width="580"
+                                        height="550" class="h-auto w-full" />
+                                    <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+                                        class="group group absolute flex h-[100px] w-[100px] items-center justify-center rounded-[50%] bg-white text-ColorBlue"
+                                        aria-label="video-play">
+                                        <span
+                                            class="text-2xl transition-all duration-300 ease-linear group-hover:scale-110"><i
+                                                class="fa-solid fa-play"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- About Hero Image Block -->
+                            <!-- About Hero Content Block -->
+                            <div class="jos order-1 lg:order-2" data-jos_animation="fade-right" data-jos_delay="0.3">
+                                <!-- Section Wrapper -->
+                                <div>
+                                    <!-- Section Block -->
+                                    <div class="mb-5">
+                                        <h2>
+                                            Feature 4
+                                        </h2>
+                                    </div>
+                                    <!-- Section Block -->
+                                    <p>
+                                        SINCE 1998, we transform bold business ideas into
+                                        exceptional digital products. We ideate, design, and
+                                        develop data-driven digital products made to answer
+                                        business challenges.
+                                    </p>
+                                    <!-- Horizontal Line Separator -->
+                                    <div class="my-7 h-px w-full bg-ColorBlack opacity-10 xl:my-10 xxl:my-14"></div>
+                                    <!-- BlockQuote Block-->
+                                    <div>
+                                        <blockquote class="mb-6 font-semibold italic text-opacity-80">
+                                            “We love what we do & create partnerships with our
+                                            clients to ensure their digital transformation is
+                                            positioned for long-term success.”
+                                        </blockquote>
+                                        <div class="flex flex-col items-center gap-4 lg:flex-row">
+                                            <img src="assets/img/th-1/about-hero-user-blockquote-img.jpg"
+                                                alt="about-hero-user-blockquote-img" width="60" height="60"
+                                                class="mx-auto h-[60px] w-[60px] rounded-[50%] lg:mx-0" />
+                                            <div>
+                                                <span class="block font-semibold">Karen Lynn</span>
+                                                <span class="text-sm text-opacity-80">CEO & Co-founder @ Company</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Section Wrapper -->
+                            </div>
+                            <!-- About Hero Content Block -->
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: Service Hero Section End :::... -->
+
+            <!--...::: OTHER FEATURES Start :::... -->
+            <section class="section-features">
+                <div class="bg-ColorGreen">
+                    <!-- Section Space -->
+                    <div class="section-space">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <!-- Section Content Wrapper -->
+                            <div class="jos mb-[60px] xl:mb-20">
+                                <!-- Section Content Block -->
+                                <div class="mx-auto max-w-[526px]">
+                                    <h2 class="text-center">
+                                        More Features
+                                    </h2>
+                                </div>
+                                <!-- Section Content Block -->
+                            </div>
+                            <!-- Section Content Wrapper -->
+
+                            <!-- Feature List -->
+                            <div
+                                class="grid gap-10 sm:grid-cols-2 xl:grid-cols-3 xl:gap-10 xxl:gap-x-20 xxl:gap-y-[60px]">
+                                <div class="jos" data-jos_animation="fade-left" data-jos_delay="0">
+                                    <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                                        <img src="assets/img/icons/icon-yellow-feature-1.svg"
+                                            alt="icon-yellow-feature-1" width="60" height="60"
+                                            class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                                        <div>
+                                            <div
+                                                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                                Contact Logs
+                                            </div>
+                                            <p>
+                                                Track your communication
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jos" data-jos_animation="fade-left" data-jos_delay="0.3">
+                                    <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                                        <img src="assets/img/icons/icon-yellow-feature-2.svg"
+                                            alt="icon-yellow-feature-1" width="60" height="60"
+                                            class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                                        <div>
+                                            <div
+                                                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                                Referral History
+                                            </div>
+                                            <p>
+                                                View a person’s record of referrals and their results
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jos" data-jos_animation="fade-left" data-jos_delay="0.6">
+                                    <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                                        <img src="assets/img/icons/icon-yellow-feature-3.svg"
+                                            alt="icon-yellow-feature-3" width="60" height="60"
+                                            class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                                        <div>
+                                            <div
+                                                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                                Attachments
+                                            </div>
+                                            <p>
+                                                Store external records centrally
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jos" data-jos_animation="fade-right" data-jos_delay="0.9">
+                                    <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                                        <img src="assets/img/icons/icon-yellow-feature-4.svg"
+                                            alt="icon-yellow-feature-4" width="60" height="60"
+                                            class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                                        <div>
+                                            <div
+                                                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                                HIPAA Compliance
+                                            </div>
+                                            <p>
+                                                Keep it all secure
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jos" data-jos_animation="fade-right" data-jos_delay="1.2">
+                                    <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                                        <img src="assets/img/icons/icon-yellow-feature-5.svg"
+                                            alt="icon-yellow-feature-5" width="60" height="60"
+                                            class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                                        <div>
+                                            <div
+                                                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                                EHR Integration
+                                            </div>
+                                            <p>
+                                                Easily move a person's information to where it needs to go
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jos" data-jos_animation="fade-right" data-jos_delay="1.5">
+                                    <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                                        <img src="assets/img/icons/icon-yellow-feature-6.svg"
+                                            alt="icon-yellow-feature-6" width="60" height="60"
+                                            class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                                        <div>
+                                            <div
+                                                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                                Payer Tracking
+                                            </div>
+                                            <p>
+                                                Get insurance in order.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jos" data-jos_animation="fade-right" data-jos_delay="1.5">
+                                    <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                                        <img src="assets/img/icons/icon-yellow-feature-6.svg"
+                                            alt="icon-yellow-feature-6" width="60" height="60"
+                                            class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                                        <div>
+                                            <div
+                                                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                                Audit Logging
+                                            </div>
+                                            <p>
+                                                See who did what and when
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jos" data-jos_animation="fade-right" data-jos_delay="1.5">
+                                    <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                                        <img src="assets/img/icons/icon-yellow-feature-6.svg"
+                                            alt="icon-yellow-feature-6" width="60" height="60"
+                                            class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                                        <div>
+                                            <div
+                                                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                                Custom Roles
+                                            </div>
+                                            <p>
+                                                Control visibility
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jos" data-jos_animation="fade-right" data-jos_delay="1.5">
+                                    <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                                        <img src="assets/img/icons/icon-yellow-feature-6.svg"
+                                            alt="icon-yellow-feature-6" width="60" height="60"
+                                            class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                                        <div>
+                                            <div
+                                                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                                Custom Assignments
+                                            </div>
+                                            <p>
+                                                Configure locations, groups, sites, etc.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Feature List -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Section Space -->
+                </div>
+            </section>
+            <!--...::: OTHER FEATURES Start :::... -->
+        </main>
+
+        <!--...::: Footer Section Start :::... -->
+        <footer class="section-footer">
+            <!-- Footer Area Center -->
+            <div class="text-[#2C2C2C]">
+                <!-- Footer Center Spacing -->
+                <div class="py-[60px] lg:py-20">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Footer Widget List -->
+                        <div
+                            class="grid gap-x-4 lg:gap-x-16 gap-y-10 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-[1fr_repeat(3,_auto)] xl:lg:grid-cols-[1fr_repeat(4,_auto)]  xl:gap-x-20">
+                            <!-- Footer Widget Item -->
+                            <div class="flex flex-col gap-y-7 md:col-span-4 lg:col-span-1">
+                                <!-- Footer Logos -->
+                                <div class="footer-logos">
+                                    <a href="index.html" class="mr-[10px]">
+                                        <img src="assets/img/logos/supportable-horizontal.svg" alt="Supportable"
+                                            width="200" height="auto" />
+                                    </a>
+                                    <a href="https://dashboardtraction.com/" class="ml-[35px]" target="_blank">
+                                        <img src="assets/img/logos/dt_logo_only.svg" alt="Dashboard-Traction" width="40"
+                                            height="auto" />
+                                    </a>
+                                </div>
+                                <!-- Footer Content -->
+                                <div>
+                                    <!-- Footer About Text -->
+                                    <div class="lg:max-w-[320px]">
+                                        Supportable is a product of Dashboard Traction.
+                                        We have all the relevant socials that you can follow us on.
+                                    </div>
+                                    <!-- Footer Social Link -->
+                                    <div class="mt-10 flex flex-wrap gap-5">
+                                        <a href="https://www.youtube.com/channel/UC4m8uQlDWOlQwcg8B9neVaw"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-[#0E0E0E]/10 text-sm text-[#0E0E0E] transition-all duration-300 hover:bg-ColorPurple hover:text-white"
+                                            aria-label="youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/supportable/" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-[#0E0E0E]/10 text-sm text-[#0E0E0E] transition-all duration-300 hover:bg-ColorPurple hover:text-white"
+                                            aria-label="linkedin">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/SupportableApp" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-[#0E0E0E]/10 text-sm text-[#0E0E0E] transition-all duration-300 hover:bg-ColorPurple hover:text-white"
+                                            aria-label="facebook">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://twitter.com/SupportableApp" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-[#0E0E0E]/10 text-sm text-[#0E0E0E] transition-all duration-300 hover:bg-ColorPurple hover:text-white"
+                                            aria-label="x-twitter">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Footer Content -->
+                            </div>
+                            <!-- Footer Widget Item -->
+
+                            <!-- Footer Widget Item -->
+                            <div class="flex flex-col gap-y-7 md:col-span-1 lg:col-span-1">
+                                <!-- Footer Widget Title -->
+                                <div class="text-xl font-semibold capitalize text-[#0E0E0E]">
+                                    Primary Pages
+                                </div>
+                                <!-- Footer Navbar -->
+                                <ul class="flex flex-col gap-y-[10px] capitalize">
+                                    <li>
+                                        <a href="index.html"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">About
+                                            Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="features.html"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Footer Widget Item -->
+
+                            <!-- Footer Widget Item -->
+                            <div class="flex flex-col gap-y-6 md:col-span-1 lg:col-span-1">
+                                <!-- Footer Title -->
+                                <div class="text-xl font-semibold capitalize text-[#0E0E0E]">
+                                    More Resources
+                                </div>
+                                <!-- Footer Title -->
+
+                                <!-- Footer Navbar -->
+                                <ul class="flex flex-col gap-y-[10px] capitalize">
+                                    <li>
+                                        <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">Privacy
+                                            policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">Terms
+                                            & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Footer Widget Item -->
+                        </div>
+                        <!-- Footer Widget List -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Footer Center Spacing -->
+            </div>
+            <!-- Footer Area Center -->
+            <div class="horizontal-line bg-ColorBlack"></div>
+            <!-- Footer Bottom -->
+            <div>
+                <!-- Footer Bottom Spacing -->
+                <div class="py-10">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <div class="text-center">
+                            &copy; Copyright 2024, All Rights Reserved by Dashboard Traction
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Footer Bottom Spacing -->
+            </div>
+            <!-- Footer Bottom -->
+        </footer>
+        <!--...::: Footer Section End :::... -->
+    </div>
+
+    <!--Vendor js-->
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

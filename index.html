@@ -1,0 +1,1712 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supportable | Home of the Behavioral Health CRM, built to process referrals and organize your contacts.
+    </title>
+    <meta name="description"
+        content="If you operate a behavioral health, human services, or mental health organization, Supportable is your premiere CRM." />
+
+    <!-- D3 and jquery for form -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets/img/supportable-white_background_favicon.ico" />
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="assets/fonts/iconfonts/font-awesome/stylesheet.css" />
+    <!-- Site font -->
+    <link rel="stylesheet" href="assets/fonts/webfonts/inter/stylesheet.css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/menu.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Development css -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Production css -->
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+</head>
+
+<body>
+    <div class="page-wrapper relative z-[1] bg-[#FEF7E6]">
+        <!--...::: Header Start :::... -->
+        <header class="site-header site-header--sticky is--white py-1 bg-ColorLightYellowOpacity" id="sticky-menu">
+            <div class="container-default">
+                <div class="flex items-center justify-between gap-x-8">
+                    <!-- Header Logo -->
+                    <a href="index.html">
+                        <img src="assets/img/logos/supportable-horizontal.svg" alt="Supportable navigation logo"
+                            width="250" height="auto" />
+                    </a>
+                    <!-- Header Logo -->
+
+                    <!-- Header Navigation -->
+                    <div class="menu-block-wrapper">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu-block" id="append-menu-header">
+                            <div class="mobile-menu-head">
+                                <div class="go-back">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="site-menu-main">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link-item">Home</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link-item">About</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="features.html" class="nav-link-item drop-trigger">Features
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-2">
+                                        <li class="sub-menu--item">
+                                            <a href="features.html">Features</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="integrations.html">Integrations</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger">Resources
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-2">
+                                        <li class="sub-menu--item">
+                                            <a href="features.html">Interoperability</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="service-details.html">Developer Program</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="pricing.html">Pricing</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="faq.html">FAQ</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="roi-calculator.html">ROI Calculator</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link-item">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Header Navigation -->
+
+                    <!-- Header User Event -->
+                    <div class="flex items-center gap-6">
+                        <a href="discovery.html" class="group relative z-10 hidden sm:inline-block" target="_blank">
+                            <div class="btn rounded-[3px] border-2 border-[#0E0E0E] bg-brandPurple text-white">
+                                Get Started With Us
+                            </div>
+                            <div
+                                class="absolute inset-0 -z-10 translate-x-[5px] translate-y-[5px] rounded-[3px] bg-[#0E0E0E] transition-all duration-300 ease-linear group-hover:translate-x-0 group-hover:translate-y-0">
+                            </div>
+                        </a>
+                        <!-- Responsive Offcanvas Menu Button -->
+                        <div class="block lg:hidden">
+                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Header User Event -->
+                </div>
+            </div>
+        </header>
+        <!--...::: Header End :::... -->
+
+        <main class="main-wrapper relative overflow-hidden">
+            <!--...::: Hero Section Start :::... -->
+            <section class="section-hero">
+                <!-- Section Background -->
+                <div class="bg-ColorLightYellow">
+                    <!-- Hero Section Space -->
+                    <div
+                        class="pb-[60px] pt-28 md:pb-20 md:pt-36 lg:pb-[100px] lg:pt-[150px] xxl:pb-[120px] xxl:pt-[185px]">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <!-- Hero Area -->
+                            <div
+                                class="grid items-center justify-center gap-[60px] md:grid-cols-[1fr_minmax(0,_0.6fr)]">
+                                <!-- Hero Content Block -->
+                                <div class="jos">
+                                    <div class="mx-auto mb-6 max-w-xl lg:max-w-2xl xl:max-w-3xl xxl:max-w-[1076px]">
+                                        <h1
+                                            class="mb-6 font-Filson text-[40px] font-semibold leading-none -tracking-[1px] text-[#0E0E0E] sm:text-5xl lg:text-6xl xl:text-[76px] xxl:text-[90px]">
+                                            Referrals.<br /> Intake.<br /> Admissions.<br />
+                                            <span style="color: #00CCCC">The Easy Way.</span>
+                                        </h1>
+                                    </div>
+                                    <h4 class="mb-9 max-w-[746px] lg:mb-14 font-Filson">
+                                        Your new client acquisition process does not have to be so hard.
+                                    </h4>
+                                </div>
+                                <!-- Hero Content Block -->
+
+                                <!-- Hero Image Block -->
+                                <div class="relative">
+                                    <img src="assets/img/elements/hero_girl.png"
+                                        alt="Supportable hero image girl waving to user with analytics overlayed"
+                                        width="455" height="548" data-jos_animation="zoom-in-down"
+                                        class="mx-auto md:rotate-[5deg]" />
+
+                                    <!-- Hero Image Shape - 1 -->
+                                    <img src="assets/img/elements/hero-12-shape-1.svg" alt="hero graphic sparkles"
+                                        width="56" height="81"
+                                        class="absolute -left-20 bottom-0 hidden md:inline-block lg:-left-28" />
+                                    <!-- Hero Image Shape - 2 -->
+                                    <img src="assets/img/elements/hero-12-shape-2.svg" alt="hero graphic lines"
+                                        width="55" height="68"
+                                        class="absolute -right-16 -top-8 hidden md:inline-block" />
+                                </div>
+                                <!-- Hero Image Block -->
+                            </div>
+                            <!-- Hero Area -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Hero Section Space -->
+                </div>
+                <!-- Section Background -->
+            </section>
+            <!--...::: Hero Section End :::... -->
+
+            <div
+                class="min-h-[65px] w-full rotate-180 bg-[url('../img/elements/home-4-divider-shape-yellow.svg')] bg-contain bg-[center_bottom] bg-repeat-x">
+            </div>
+
+            <!--...::: Video Section Start :::... -->
+            <section class="section-video" style="margin-top: 75px;">
+                <!-- Section Space -->
+                <div class="section-space-bottom">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Section Content Wrapper -->
+                        <div class="jos mb-[60px] xl:mb-20">
+                            <!-- Section Content Block -->
+                            <div class="mx-auto max-w-[1000px]">
+                                <div class="mb-5">
+                                    <h2
+                                        class="text-center font-Filson text-4xl font-bold leading-[1.16] -tracking-[0.5px] text-[#0E0E0E] lg:text-5xl xl:text-[52px] xxl:text-[52px]">
+                                        Here's our handy video introduction to your <span
+                                            class="highlight-underline">premiere healthcare CRM</span>.
+                                    </h2>
+                                </div>
+                                <p class="mx-auto max-w-[718px] text-center text-[#2c2c2c]">
+                                    Sometimes you to just want to see a quick video. We've made one just for you.
+                                </p>
+                            </div>
+                            <!-- Section Content Block -->
+                        </div>
+                        <!-- Section Content Wrapper -->
+
+                        <!-- Video Block -->
+                        <div class="jos">
+                            <div class="relative flex items-center justify-center">
+                                <img src="assets/img/th-12/video-img.png" alt="Supportable introduction video thumbnail"
+                                    width="1296" height="600" class="h-auto w-full" />
+                                <a data-fslightbox="gallery" href="https://youtu.be/3HfPiR5w3ic"
+                                    class="group group absolute flex items-center justify-center"
+                                    aria-label="video-play">
+                                    <img src="assets/img/icons/icon-purple-video-btn.svg"
+                                        alt="Supportable introduction video play icon" width="126" height="120"
+                                        class="h-auto w-16 md:h-auto md:w-24 lg:h-auto lg:w-[126px]" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Video Block -->
+                    </div>
+                    <!-- Section Container -->
+                    <h2 class="mb-9 lg:mb-14 font-Filson transition-all duration-300"
+                        style="text-align: center; margin-top: 25px;">
+                        Look interesting to you?
+                    </h2>
+                    <div class="flex justify-center">
+                        <a href="discovery.html" class="group relative z-10 inline-block">
+                            <div class="btn is-large rounded-[3px] border-2 border-[#0E0E0E] bg-brandPurple text-white">
+                                Contact Us
+                            </div>
+                            <div
+                                class="absolute inset-0 -z-10 translate-x-[5px] translate-y-[5px] rounded-[3px] bg-[#0E0E0E] transition-all duration-300 ease-linear group-hover:translate-x-0 group-hover:translate-y-0">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: Video Section End :::... -->
+            <div class="mb-[100px]">
+            </div>
+            <!--...::: WHAT IS A CRM Section Start :::... -->
+            <section class="section-service">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Section Content Wrapper -->
+                        <div class="jos mb-[5px]">
+                            <!-- Section Content Block -->
+                            <div class="mx-auto max-w-[940px]">
+                                <div class="mb-5">
+                                    <h2
+                                        class="text-center font-Filson text-4xl font-bold leading-[1.16] -tracking-[0.5px] text-[#0E0E0E] lg:text-5xl xl:text-[52px] xxl:text-[52px]">
+                                        What even is a healthcare CRM?
+                                    </h2>
+                                </div>
+                            </div>
+                            <p
+                                class="jos text-lg -tracking-[0.5px] text-[#2C2C2C] transition-all duration-150 group-hover:text-[#F6F9F0] lg:text-xl xl:text-2xl">
+                                Customer Relationship Management (CRM) is a technology that enables Mental Health
+                                Clinics
+                                to manage their interactions with customers and potential customers.
+                                The primary goal of CRM is to improve relationships with customers to
+                                foster growth. <br /><br />In your work, you have two types of customers:
+                            </p>
+                        </div>
+                        <!-- Section Content Wrapper -->
+
+                        <!-- Customer Types List -->
+                        <div class="grid sm:grid-cols-1 md:grid-cols-2">
+                            <div class="jos" data-jos_delay="0.4">
+                                <div
+                                    class="group items-start justify-between gap-x-10 gap-y-10 rounded-[10px] p-10 transition-all duration-300 md:flex-row md:items-center lg:gap-x-20 xl:gap-x-[94px]">
+                                    <div class="flex-1 text-center">
+                                        <div
+                                            class="mb-4 font-Filson text-3xl font-medium leading-[1.4] text-black transition-all duration-300">
+                                            Those who are being referred to you...
+                                        </div>
+                                    </div>
+                                    <div class="relative flex h-auto items-center justify-center">
+                                        <dotlottie-player
+                                            src="https://lottie.host/61da15ff-4475-4285-8acc-14d55faeed3c/u01H1AVNCR.json"
+                                            background="transparent" speed="1" style="width: 225px; height: 225px"
+                                            direction="1" playMode="normal" loop autoplay></dotlottie-player>
+                                    </div>
+                                    <div class="flex-1 text-center">
+                                        <div
+                                            class="mb-4 font-Filson text-3xl font-medium leading-[1.4] text-black transition-all duration-300">
+                                            ...your <span class="highlight-underline-thick">potential clients</span>.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Customer Type Item -->
+                            <!-- Customer Type Item -->
+                            <div class="jos" data-jos_delay="0.8">
+                                <div
+                                    class="group items-start justify-between gap-x-10 gap-y-10 rounded-[10px] p-10 transition-all duration-300 md:flex-row md:items-center lg:gap-x-20 xl:gap-x-[94px]">
+                                    <div class="flex-1 text-center">
+                                        <div
+                                            class="mb-4 font-Filson text-3xl font-medium leading-[1.4] text-black transition-all duration-300">
+                                            Those who make referrals to you...
+                                        </div>
+                                    </div>
+                                    <div class="relative flex h-auto items-center justify-center">
+                                        <dotlottie-player
+                                            src="https://lottie.host/30660b21-62ee-40af-be19-eb4b84d26bee/RiV1Ukxkqv.json"
+                                            background="transparent" speed="1" style="width: 225px; height: 225px"
+                                            direction="1" playMode="normal" loop autoplay></dotlottie-player>
+                                    </div>
+                                    <div class="flex-1 text-center">
+                                        <div
+                                            class="mb-4 font-Filson text-3xl font-medium leading-[1.4] text-black transition-all duration-300">
+                                            ...your <span class="highlight-underline-thick">business contacts</span>.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Customer Type Item -->
+                        </div>
+                        <!-- Customer Types List -->
+                    </div>
+                    <!-- Section Container -->
+                    <h2 class="mb-9 lg:mb-14 font-Filson" style="text-align: center; margin-top: 25px;">
+                        Your CRM should handle both.
+                    </h2>
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: WHAT IS A CRM Section End :::... -->
+
+            <div
+                class="min-h-[65px] w-full bg-[url('../img/elements/home-4-divider-shape-yellow.svg')] bg-contain bg-[center_bottom] bg-repeat-x">
+            </div>
+
+            <!--...::: WHY IMPORTANT Section Start :::... -->
+            <section class="section-features">
+                <!-- Section Background -->
+                <div class="relative z-10 bg-ColorLightYellow">
+                    <!-- Section Space -->
+                    <div class="section-space">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <!-- Section Content Wrapper -->
+                            <div class="jos mb-[60px] xl:mb-20">
+                                <!-- Section Content Block -->
+                                <div class="mx-auto max-w-[636px]">
+                                    <h2 class="text-center text-ColorBlack font-Filson -tracking-[1px]">
+                                        So why is this important to your business?
+                                    </h2>
+                                </div>
+                                <!-- Section Content Block -->
+                            </div>
+                            <!-- Section Content Wrapper -->
+
+                            <!-- Feature List -->
+                            <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+                                <!-- Features Item -->
+                                <div class="jos" data-jos_animation="fade-right" data-jos_delay="0">
+                                    <div onmouseenter="player.play()" onmouseleave="player.stop()"
+                                        class="h-full rounded-[10px] border-2 border-ColorBlack p-[30px] transition-all duration-300 hover:-rotate-3 hover:bg-white">
+                                        <img src="assets/img/icons/home-feature-1-clock.svg"
+                                            alt="icon faster time to service clock" width="57" height="69"
+                                            class="mb-[30px] h-[70px] w-auto" />
+                                        <div
+                                            class="mb-4 text-2xl font-semibold font-Filson -tracking-[0.5px] text-ColorBlack">
+                                            Faster time to service
+                                        </div>
+                                        <p class="line-clamp-3 text-ColorBlack">
+                                            Getting client's through the door is your jam.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Features Item -->
+                                <!-- Features Item -->
+                                <div class="jos" data-jos_animation="fade-right" data-jos_delay="0.3">
+                                    <div
+                                        class="h-full rounded-[10px] border-2 border-ColorBlack p-[30px] transition-all duration-300 hover:-rotate-3 hover:bg-white">
+                                        <img src="assets/img/icons/icon-revenue-increase.svg"
+                                            alt="icon revenue increase column chart with arrow pointing up" width="57"
+                                            height="69" class="mb-[30px] h-[70px] w-auto" />
+                                        <div
+                                            class="mb-4 text-2xl font-semibold font-Filson -tracking-[0.5px] text-ColorBlack">
+                                            Revenue increase
+                                        </div>
+                                        <p class="line-clamp-3 text-ColorBlack">
+                                            Keeping your openings filled means keeping your lights on.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Features Item -->
+                                <!-- Features Item -->
+                                <div class="jos" data-jos_animation="fade-right" data-jos_delay="0.6">
+                                    <div
+                                        class="h-full rounded-[10px] border-2 border-ColorBlack p-[30px] transition-all duration-300 hover:-rotate-3 hover:bg-white">
+                                        <img src="assets/img/icons/icon-decision.svg"
+                                            alt="icon data-driven decision-making head with lightbulb" width="57"
+                                            height="69" class="mb-[30px] h-[70px] w-auto" />
+                                        <div
+                                            class="mb-4 text-2xl font-semibold font-Filson -tracking-[0.5px] text-ColorBlack">
+                                            Data-driven decision-making
+                                        </div>
+                                        <p class="line-clamp-3 text-ColorBlack">
+                                            Operating from your gut only gets you so far.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Features Item -->
+                                <!-- Features Item -->
+                                <div class="jos" data-jos_animation="fade-right" data-jos_delay="0.9">
+                                    <div
+                                        class="h-full rounded-[10px] border-2 border-ColorBlack p-[30px] transition-all duration-300 hover:-rotate-3 hover:bg-white">
+                                        <img src="assets/img/icons/icon-transparency-organization.svg"
+                                            alt="icon transparency magnifying glass looking at org chart" width="57"
+                                            height="69" class="mb-[30px] h-[70px] w-auto" />
+                                        <div
+                                            class="mb-4 text-2xl font-semibold font-Filson -tracking-[0.5px] text-ColorBlack">
+                                            Transparency & organization
+                                        </div>
+                                        <p class="line-clamp-3 text-ColorBlack">
+                                            Your front-end operations set the tone for service.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Features Item -->
+                            </div>
+                            <!-- Feature List -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Section Space -->
+                </div>
+                <!-- Section Background -->
+
+                <!-- Background Divider Shape -->
+                <div
+                    class="min-h-[65px] w-full rotate-180 bg-[url('../img/elements/home-4-divider-shape-yellow.svg')] bg-contain bg-[center_bottom] bg-repeat-x">
+                </div>
+            </section>
+            <!--...::: WHY IMPORTANT Section End :::... -->
+
+            <!--...::: DIFFERENTIATORS Section Start :::... -->
+            <section class="section-feature mt-[60px]">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Section Content Wrapper -->
+                        <div class="jos mb-[60px] xl:mb-20">
+                            <!-- Section Content Block -->
+                            <div class="mx-auto max-w-[746px]">
+                                <div class="mb-5">
+                                    <h2
+                                        class="text-center font-Filson text-4xl font-bold leading-[1.16] -tracking-[0.5px] text-[#0E0E0E] lg:text-5xl xl:text-[52px] xxl:text-[52px]">
+                                        What makes Supportable different than other CRMs?
+                                    </h2>
+                                </div>
+                            </div>
+                            <!-- Section Content Block -->
+                        </div>
+                        <!-- Section Content Wrapper -->
+
+                        <!-- Feature List -->
+                        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                            <!-- Feature Item -->
+                            <div class="jos" data-jos_delay="0">
+                                <div class="hover-solid-shadow h-full">
+                                    <div
+                                        class="flex h-full flex-col gap-[30px] rounded-[10px] border-2 border-[#0E0E0E] bg-[#FEF7E6] p-10 pr-[30px] lg:flex-row">
+                                        <div class="h-auto w-[74px]">
+                                            <img src="assets/img/icons/icon-black-home-12-feature-1.svg"
+                                                alt="icon-black-home-12-feature-1" width="75" height="81"
+                                                class="h-auto w-full" />
+                                        </div>
+                                        <div class="flex-1">
+                                            <div
+                                                class="mb-4 font-Filson text-xl font-semibold text-[#0E0E0E] lg:text-2xl">
+                                                Focused on Behavioral Health and Human Services
+                                            </div>
+                                            <p class="text-[#2C2C2C]">
+                                                We built this thing out of pure necessity.
+                                                Other CRMs are too generalized, built to meet a much, much broader
+                                                audience.
+                                            </p>
+                                            <a href="#">
+                                                <img src="assets/img/icons/icon-black-arrow-right.svg"
+                                                    onmouseover="this.src='assets/img/icons/icon-purple-arrow-right.svg'"
+                                                    onmouseout="this.src='assets/img/icons/icon-black-arrow-right.svg'"
+                                                    alt="icon-black-arrow-right" width="31" height="20" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Feature Item -->
+                            <!-- Feature Item -->
+                            <div class="jos" data-jos_delay="0.3">
+                                <div class="hover-solid-shadow h-full">
+                                    <div
+                                        class="flex h-full flex-col gap-[30px] rounded-[10px] border-2 border-[#0E0E0E] bg-[#FEF7E6] p-10 pr-[30px] lg:flex-row">
+                                        <div class="h-auto w-[74px]">
+                                            <img src="assets/img/icons/icon-black-service-2.svg"
+                                                alt="icon-black-home-12-feature-2.svg" width="75" height="66"
+                                                class="h-auto w-full" />
+                                        </div>
+                                        <div class="flex-1">
+                                            <div
+                                                class="mb-4 font-Filson text-xl font-semibold text-[#0E0E0E] lg:text-2xl">
+                                                Analytics and Reporting That Matter to Your Business
+                                            </div>
+                                            <p class="text-[#2C2C2C]">
+                                                Supportable delivers data like no other. It's built by people who needed
+                                                to capture
+                                                the relevant data for this industry because nothing else did.
+                                            </p>
+                                            <a href="#">
+                                                <img src="assets/img/icons/icon-black-arrow-right.svg"
+                                                    onmouseover="this.src='assets/img/icons/icon-purple-arrow-right.svg'"
+                                                    onmouseout="this.src='assets/img/icons/icon-black-arrow-right.svg'"
+                                                    alt="icon-black-arrow-right" width="31" height="20" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Feature Item -->
+                            <!-- Feature Item -->
+                            <div class="jos" data-jos_delay="0.6">
+                                <div class="hover-solid-shadow h-full">
+                                    <div
+                                        class="flex h-full flex-col gap-[30px] rounded-[10px] border-2 border-[#0E0E0E] bg-[#FEF7E6] p-10 pr-[30px] lg:flex-row">
+                                        <div class="h-auto w-[74px]">
+                                            <img src="assets/img/icons/icon-black-home-12-feature-3.svg"
+                                                alt="icon-black-home-12-feature-3.svg" width="75" height="58"
+                                                class="h-auto w-full" />
+                                        </div>
+                                        <div class="flex-1">
+                                            <div
+                                                class="mb-4 font-Filson text-xl font-semibold text-[#0E0E0E] lg:text-2xl">
+                                                Out-of-the-box HIPAA Compliance
+                                            </div>
+                                            <p class="text-[#2C2C2C]">
+                                                No fuss. No add-ons. No additional pricing. HIPAA compliance is in the
+                                                front of our minds.
+                                            </p>
+                                            <a href="#">
+                                                <img src="assets/img/icons/icon-black-arrow-right.svg"
+                                                    onmouseover="this.src='assets/img/icons/icon-purple-arrow-right.svg'"
+                                                    onmouseout="this.src='assets/img/icons/icon-black-arrow-right.svg'"
+                                                    alt="icon-black-arrow-right" width="31" height="20" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Feature Item -->
+                            <!-- Feature Item -->
+                            <div class="jos" data-jos_delay="0.3">
+                                <div class="hover-solid-shadow h-full">
+                                    <div
+                                        class="flex h-full flex-col gap-[30px] rounded-[10px] border-2 border-[#0E0E0E] bg-[#FEF7E6] p-10 pr-[30px] lg:flex-row">
+                                        <div class="h-auto w-[74px]">
+                                            <img src="assets/img/icons/icon-black-home-12-feature-4.svg"
+                                                alt="icon-black-home-12-feature-4.svg" width="75" height="79"
+                                                class="h-auto w-full" />
+                                        </div>
+                                        <div class="flex-1">
+                                            <div
+                                                class="mb-4 font-Filson text-xl font-semibold text-[#0E0E0E] lg:text-2xl">
+                                                Lean and lightweight
+                                            </div>
+                                            <p class="text-[#2C2C2C]">
+                                                We maintain your data. Once your set up, your administrators have very
+                                                little to keep up with.
+                                            </p>
+                                            <a href="#">
+                                                <img src="assets/img/icons/icon-black-arrow-right.svg"
+                                                    onmouseover="this.src='assets/img/icons/icon-purple-arrow-right.svg'"
+                                                    onmouseout="this.src='assets/img/icons/icon-black-arrow-right.svg'"
+                                                    alt="icon-black-arrow-right" width="31" height="20" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Feature Item -->
+                        </div>
+                        <!-- Feature List -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: DIFFERENTIATORS Section End :::... -->
+
+            <!--...::: FEATURES Section Start :::... -->
+            <section class="section-content mt-[60px]">
+                <!-- Section Space -->
+                <div class="section-space-bottom">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <div class="flex flex-col gap-y-20 lg:gap-y-[100px] xl:gap-y-[120px]">
+                            <!-- Content Area Single -->
+                            <div
+                                class="grid items-center gap-10 md:grid-cols-[0.7fr_minmax(0,_1fr)] lg:gap-24 xl:gap-[135px] xxl:gap-[182px]">
+                                <!-- Content Block Left -->
+                                <div class="order-1 md:order-2 jos" data-jos_animation="fade-right" data-jos_once="1"
+                                    data-jos_timingfunction="ease" data-jos_duration="0.7" data-jos_delay="0.5"
+                                    data-jos_counter="1">
+                                    <!-- Section Wrapper -->
+                                    <div>
+                                        <!-- Section Block -->
+                                        <div class="mb-5">
+                                            <h2
+                                                class="text-center font-Filson text-4xl font-bold leading-[1.16] -tracking-[0.5px] text-[#0E0E0E] lg:text-5xl xl:text-[52px] xxl:text-[52px]">
+                                                Our Core Features
+                                            </h2>
+                                        </div>
+                                        <!-- Section Block -->
+                                    </div>
+                                    <!-- Section Wrapper -->
+                                    <!-- Content Text -->
+                                    <!-- <p class="text-[#2C2C2C]">
+                                        AI-powered algorithms can analyze images &amp; make
+                                        intelligent adjustments to improve the quality of your
+                                        design and you can automatically enhance colors, adjust
+                                        brightness and contrast, reduce noise, and sharpen
+                                        details.
+                                    </p> -->
+                                    <!-- Content Text -->
+                                    <!-- Content List -->
+                                    <ul class="mt-8 flex flex-col gap-y-9 lg:mt-[50px]">
+                                        <!-- Content Item -->
+                                        <li class="flex gap-x-5 font-Cofo text-xl font-semibold text-[#0E0E0E] lg:text-2xl"
+                                            onclick=toggleFeature(1)>
+                                            <a href="features.html">
+                                                <div class="h-auto w-16 list-group-item-child">
+                                                    <img src="assets/img/icons/icon-purple-checklist.svg"
+                                                        alt="icon-purple-checklist" width="35" height="35"
+                                                        class="h-auto w-full">
+                                                </div>
+                                                <div class="flex-1 list-group-item-child">
+                                                    Process Customization
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- Content Item -->
+                                        <!-- Content Item -->
+                                        <li class="flex gap-x-5 font-Cofo text-xl font-semibold text-[#0E0E0E] lg:text-2xl"
+                                            onclick=toggleFeature(2)>
+                                            <a href="features.html">
+                                                <div class="h-auto w-16 col list-group-item-child">
+                                                    <img src="assets/img/icons/icon-purple-insurance.svg"
+                                                        alt="icon-purple-insurance" width="35" height="35"
+                                                        class="h-auto w-full">
+                                                </div>
+                                                <div class="flex-1 list-group-item-child">
+                                                    Referral and Contact Tracking
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- Content Item -->
+                                        <!-- Content Item -->
+                                        <li class="flex gap-x-5 font-Cofo text-xl font-semibold text-[#0E0E0E] lg:text-2xl"
+                                            onclick=toggleFeature(3)>
+                                            <a href="features.html">
+                                                <div class="h-auto w-16 list-group-item-child">
+                                                    <img src="assets/img/icons/icon-purple-piechart.svg"
+                                                        alt="icon-purple-piechart.svg" width="35" height="35"
+                                                        class="h-auto w-full">
+                                                </div>
+                                                <div class="flex-1 list-group-item-child">
+                                                    Full-circle reporting
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- Content Item -->
+                                        <!-- Content Item -->
+                                        <li class="flex gap-x-5 font-Cofo text-xl font-semibold text-[#0E0E0E] lg:text-2xl"
+                                            onclick=toggleFeature(4)>
+                                            <a href="features.html">
+                                                <div class="h-auto w-16 list-group-item-child">
+                                                    <img src="assets/img/icons/icon-purple-insurance.svg"
+                                                        alt="icon-purple-piechart.svg" width="35" height="35"
+                                                        class="h-auto w-full">
+                                                </div>
+                                                <div class="flex-1 list-group-item-child">
+                                                    Single-Point Eligibility Verification
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- Content Item -->
+                                    </ul>
+                                    <!-- Content List -->
+                                </div>
+                                <!-- Content Block Left -->
+                                <!-- Content Block Right -->
+                                <div class="order-2 md:order-1 jos" data-jos_animation="fade-left" data-jos_once="1"
+                                    data-jos_timingfunction="ease" data-jos_duration="0.7" data-jos_delay="0.5"
+                                    data-jos_counter="1">
+                                    <div class="mx-auto w-[70%] md:w-full">
+                                        <img src="assets/img/elements/features_home.png" alt="features_home" width="456"
+                                            height="548" class="h-auto w-full -rotate-[5deg]">
+                                    </div>
+                                </div>
+                                <!-- Content Block Right -->
+                            </div>
+                            <!-- Content Area Single -->
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: FEATURES Section End :::... -->
+
+            <!--...::: INTEGRATIONS Section Start :::... -->
+            <div class="section-brand mt-[60px]">
+                <div class="jos">
+                    <!-- Section Space -->
+                    <div class="pb-[60px] md:pb-20 lg:pb-[100px]">
+                        <div>
+                            <!-- Section Block -->
+                            <div class="mb-5">
+                                <h2
+                                    class="text-center font-Filson text-4xl font-bold leading-[1.16] -tracking-[0.5px] text-[#0E0E0E] lg:text-5xl xl:text-[52px] xxl:text-[52px]">
+                                    Integrations
+                                </h2>
+                            </div>
+                            <!-- Section Block -->
+                        </div>
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <div
+                                class="text-lg -tracking-[0.5px] text-[#2C2C2C] transition-all duration-300 lg:text-xl xl:text-2xl md:my-[50px]">
+                                We are young, hungry, and ever-growing.<br /> <span class="highlight-underline"><a
+                                        href="integrations.html">Integration</a></span> is critical to your workflow.
+                                Here
+                                are just some of the people we integrate with.
+                            </div>
+                            <!-- Brand Slider -->
+                            <div class="swiper brand-slider">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <a href="https://therapybrands.com/mental-health-with-substance-use-recovery/procentive/" target="_blank">
+                                            <img src="assets/img/logos/procentive.png" alt="procentive" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://residexsoftware.com/" target="_blank">
+                                            <img src="assets/img/logos/rtasks-red.png" alt="rtasks" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://www.availity.com/" target="_blank">
+                                            <img src="assets/img/logos/availity.png" alt="availity" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" target="_blank">
+                                            <img src="assets/img/logos/outlook-logo.png" alt="procentive" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://www.therapservices.net/" target="_blank">
+                                            <img src="assets/img/logos/therap.png" alt="therap" width="186" height="46"
+                                                class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://therapybrands.com/mental-health-with-substance-use-recovery/procentive/" target="_blank">
+                                            <img src="assets/img/logos/procentive.png" alt="procentive" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://residexsoftware.com/" target="_blank">
+                                            <img src="assets/img/logos/rtasks-red.png" alt="rtasks" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://www.availity.com/" target="_blank">
+                                            <img src="assets/img/logos/availity.png" alt="availity" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" target="_blank">
+                                            <img src="assets/img/logos/outlook-logo.png" alt="procentive" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://www.therapservices.net/" target="_blank">
+                                            <img src="assets/img/logos/therap.png" alt="therap" width="186" height="46"
+                                                class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://therapybrands.com/mental-health-with-substance-use-recovery/procentive/" target="_blank">
+                                            <img src="assets/img/logos/procentive.png" alt="procentive" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://residexsoftware.com/" target="_blank">
+                                            <img src="assets/img/logos/rtasks-red.png" alt="rtasks" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://www.availity.com/" target="_blank">
+                                            <img src="assets/img/logos/availity.png" alt="availity" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" target="_blank">
+                                            <img src="assets/img/logos/outlook-logo.png" alt="procentive" width="186"
+                                                height="46" class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://www.therapservices.net/" target="_blank">
+                                            <img src="assets/img/logos/therap.png" alt="therap" width="186" height="46"
+                                                class="h-auto w-fit" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Brand Slider -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Section Space -->
+                </div>
+            </div>
+            <!--...::: INTEGRATIONS Section End :::... -->
+
+            <!--...::: Testimonial Section Start :::... -->
+            <section class="testiminial-section">
+                <!-- Section Background -->
+                <div class="rounded-[30px] bg-ColorPaleGold">
+                    <!-- Section Space -->
+                    <div class="section-space">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <!-- Section Wrapper -->
+                            <div class="jos mb-[60px] flex flex-wrap items-center justify-between gap-8 xl:mb-20">
+                                <!-- Section Block -->
+                                <div class="max-w-[688px]">
+                                    <h2
+                                        class="font-Filson text-3xl font-bold leading-[1.13] text-ColorOil lg:text-4xl xl:text-5xl">
+                                        But don't take it from us!
+                                    </h2>
+                                </div>
+                                <!-- Section Block -->
+                                <!-- <a href="#"
+                                    class="btn is-denim is-transparent is-large is-rounded btn-animation group inline-block"><span>View
+                                        all reviews</span></a> -->
+                            </div>
+                            <!-- Section Wrapper -->
+                            <!-- Testimonial Slider -->
+                            <div class="jos swiper testimonial-one">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="flex flex-col items-center gap-12 px-0 md:flex-row md:gap-16 md:px-8 lg:gap-[90px] lg:px-[60px]">
+                                            <div
+                                                class="h-[230px] w-[230px] overflow-hidden rounded-[50%] border-[10px] border-BrandPurple">
+                                                <img src="assets/img/elements/jim_hammill.png" alt="testimonial-img"
+                                                    width="230" height="230" class="h-full w-full object-cover" />
+                                            </div>
+                                            <div class="flex-1 text-ColorOil">
+                                                <p class="text-[#2C2C2C]">
+                                                    We wanted a solution that would allow us to streamline our referral
+                                                    system,
+                                                    that provided clear visuals, and created the opportunity to initiate
+                                                    services
+                                                    efficiently. Supportable not only provides us with that but also
+                                                    gives us
+                                                    clear
+                                                    analytical data that allows us identify trends, difficulties, and
+                                                    future
+                                                    opportunities. <br /><br />
+                                                    The Supportable team took the time to get to know our business,
+                                                    needs,
+                                                    expectations and desired outcomes. They delivered a product that we
+                                                    utilize
+                                                    daily and truly enjoy. I have information at my fingertips that
+                                                    would have
+                                                    been less efficient to obtain in the past. The result is that we are
+                                                    able to
+                                                    truly partner with the people we support to help them fully
+                                                    experience life.
+                                                </p>
+                                                <div class="text-xl font-semibold capitalize text-[#0E0E0E]">
+                                                    James Hammill MS, LALD
+                                                    <span class="block text-lg font-normal">Executive Director</span>
+                                                    <a href="https://www.optionsres.com/"
+                                                        class="underline-offset-4 transition-all duration-300 ease-linear hover:underline">Options
+                                                        Residential</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="flex flex-col items-center gap-12 px-0 md:flex-row md:gap-16 md:px-8 lg:gap-[90px] lg:px-[60px]">
+                                            <div
+                                                class="h-[230px] w-[230px] overflow-hidden rounded-[50%] border-[10px] border-ColorDenimDarkBlue">
+                                                <img src="assets/img/th-10/testimonial-img.png" alt="testimonial-img"
+                                                    width="230" height="230" class="h-full w-full object-cover" />
+                                            </div>
+                                            <div class="flex-1 text-ColorOil">
+                                                <blockquote
+                                                    class="mb-10 text-xl font-semibold -tracking-[0.5px] lg:text-2xl">
+                                                    “I am continually impressed with the positive input
+                                                    this program offers for me every time I sit down to
+                                                    write. My skills also have improved immensely since
+                                                    I bought Masco writing tool and I heartily recommend
+                                                    it to anyone who wants to have more confidence in
+                                                    their own writing.”
+                                                </blockquote>
+                                                <div class="">
+                                                    <span class="block text-xl font-semibold">Yusuf Ansari</span>
+                                                    <span class="block">Content writer @ xyz</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="flex flex-col items-center gap-12 px-0 md:flex-row md:gap-16 md:px-8 lg:gap-[90px] lg:px-[60px]">
+                                            <div
+                                                class="h-[230px] w-[230px] overflow-hidden rounded-[50%] border-[10px] border-ColorDenimDarkBlue">
+                                                <img src="assets/img/th-10/testimonial-img.png" alt="testimonial-img"
+                                                    width="230" height="230" class="h-full w-full object-cover" />
+                                            </div>
+                                            <div class="flex-1 text-ColorOil">
+                                                <blockquote
+                                                    class="mb-10 text-xl font-semibold -tracking-[0.5px] lg:text-2xl">
+                                                    “I am continually impressed with the positive input
+                                                    this program offers for me every time I sit down to
+                                                    write. My skills also have improved immensely since
+                                                    I bought Masco writing tool and I heartily recommend
+                                                    it to anyone who wants to have more confidence in
+                                                    their own writing.”
+                                                </blockquote>
+                                                <div class="">
+                                                    <span class="block text-xl font-semibold">Yusuf Ansari</span>
+                                                    <span class="block">Content writer @ xyz</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SLider Navigation -->
+                                <div
+                                    class="relative z-10 mt-[50px] flex flex-row-reverse justify-center gap-6 lg:-mt-[50px] lg:justify-start">
+                                    <div
+                                        class="slider-nav-btn-next flex h-[50px] w-[50px] items-center justify-center rounded-[50%] border-ColorOil bg-ColorEggSour text-ColorDenimDarkBlue transition-all duration-300 hover:border-brandPurple hover:bg-brandPurple hover:text-ColorEggSour">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                    <div
+                                        class="slider-nav-btn-prev flex h-[50px] w-[50px] items-center justify-center rounded-[50%] border-ColorOil bg-ColorEggSour text-ColorDenimDarkBlue transition-all duration-300 hover:border-ColorDenimDarkBlue hover:bg-ColorDenimDarkBlue hover:text-ColorEggSour">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Slider -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Section Space -->
+                </div>
+                <!-- Section Background -->
+            </section>
+            <!--...::: Testimonial Section End :::... -->
+
+            <!--...::: TESTIMONIALS Section Start :::... -->
+            <section class="section-testimonial">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Section Content Wrapper -->
+                        <div class="jos mb-[60px] xl:mb-20">
+                            <!-- Section Content Block -->
+                            <div class="mx-auto max-w-[750px]">
+                                <div class="mb-5">
+                                    <h2
+                                        class="text-center font-Filson text-4xl font-bold leading-[1.16] -tracking-[0.5px] text-[#0E0E0E] lg:text-5xl xl:text-[52px] xxl:text-[60px]">
+                                        But don't take it from us!
+                                    </h2>
+                                </div>
+                                <p class="text-center text-[#2c2c2c]">
+                                    Here is what some of our customers have to say!
+                                </p>
+                            </div>
+                            <!-- Section Content Block -->
+                        </div>
+                        <!-- Section Content Wrapper -->
+
+                        <!-- Testimonial List -->
+                        <div class="gris-cols-1 grid gap-[30px] md:grid-cols-2 xl:grid-cols-3">
+                            <!-- Testimonial Item -->
+                            <div class="jos" data-jos_animation="flip-left" data-jos_delay="0">
+                                <div class="hover-solid-shadow h-full">
+                                    <div
+                                        class="flex h-full flex-col gap-y-10 rounded-[10px] border-2 border-[#0E0E0E] bg-[#FEF7E6] p-10">
+                                        <div class="h-auto w-16">
+                                            <img src="assets/img/icons/icon-purple-quote.svg" alt="icon-purple-quote"
+                                                width="64" height="60" class="h-auto w-full" />
+                                        </div>
+                                        <p class="text-[#2C2C2C]">
+                                            We wanted a solution that would allow us to streamline our referral system,
+                                            that provided clear visuals, and created the opportunity to initiate
+                                            services
+                                            efficiently. Supportable not only provides us with that but also gives us
+                                            clear
+                                            analytical data that allows us identify trends, difficulties, and future
+                                            opportunities. <br /><br />
+                                            The team at Supportable took the time to get to know our business, needs,
+                                            expectations and desired outcomes. They delivered a product that we utilize
+                                            daily and truly enjoy. I have information at my fingertips that would have
+                                            been less efficient to obtain in the past. The result is that we are able to
+                                            truly partner with the people we support to help them fully experience life.
+                                        </p>
+                                        <div class="flex items-center gap-x-[17px]">
+                                            <div
+                                                class="h-[60px] w-[60px] overflow-hidden rounded-[50%] border-2 border-[#0E0E0E]">
+                                                <img src="assets/img/elements/jim_hammill.png"
+                                                    alt="testimonial-user-img-1" width="60" height="60"
+                                                    class="h-full w-full" />
+                                            </div>
+                                            <div class="text-xl font-semibold capitalize text-[#0E0E0E]">
+                                                James Hammill MS, LALD
+                                                <span class="block text-lg font-normal">Executive Director</span>
+                                                <a href="https://www.optionsres.com/"
+                                                    class="underline-offset-4 transition-all duration-300 ease-linear hover:underline">Options
+                                                    Residential</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Item -->
+                            <!-- Testimonial Item -->
+                            <div class="jos" data-jos_animation="flip-left" data-jos_delay="0.3">
+                                <div class="hover-solid-shadow h-full">
+                                    <div
+                                        class="flex h-full flex-col gap-y-10 rounded-[10px] border-2 border-[#0E0E0E] bg-[#FEF7E6] p-10">
+                                        <div class="h-auto w-16">
+                                            <img src="assets/img/icons/icon-purple-quote.svg" alt="icon-purple-quote"
+                                                width="64" height="60" class="h-auto w-full" />
+                                        </div>
+                                        <blockquote
+                                            class="text-xl font-semibold -tracking-[0.5px] text-[#0E0E0E] lg:text-2xl">
+                                            I am very impressed! The user interface is very simple
+                                            to quickly edit my photos. The editing quality is
+                                            exceptional - my photos look better than ever. Highly
+                                            recommend 👍
+                                        </blockquote>
+                                        <div class="flex items-center gap-x-[17px]">
+                                            <div
+                                                class="h-[60px] w-[60px] overflow-hidden rounded-[50%] border-2 border-[#0E0E0E]">
+                                                <img src="assets/img/th-12/testimonial-user-img-2.png"
+                                                    alt="testimonial-user-img-2" width="60" height="60"
+                                                    class="h-full w-full" />
+                                            </div>
+                                            <div class="text-xl font-semibold capitalize text-[#0E0E0E]">
+                                                Adam Jonney
+                                                <span class="block text-lg font-normal">UI Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Item -->
+                            <!-- Testimonial Item -->
+                            <div class="jos" data-jos_animation="flip-left" data-jos_delay="0.6">
+                                <div class="hover-solid-shadow h-full">
+                                    <div
+                                        class="flex h-full flex-col gap-y-10 rounded-[10px] border-2 border-[#0E0E0E] bg-[#FEF7E6] p-10">
+                                        <div class="h-auto w-16">
+                                            <img src="assets/img/icons/icon-purple-quote.svg" alt="icon-purple-quote"
+                                                width="64" height="60" class="h-auto w-full" />
+                                        </div>
+                                        <blockquote
+                                            class="text-xl font-semibold -tracking-[0.5px] text-[#0E0E0E] lg:text-2xl">
+                                            The background remover is awesome!! It is easy to use
+                                            and made my photos 100% better. This is the best picture
+                                            editing software ever!! Easy to use & very Comfortable.
+                                            😍
+                                        </blockquote>
+                                        <div class="flex items-center gap-x-[17px]">
+                                            <div
+                                                class="h-[60px] w-[60px] overflow-hidden rounded-[50%] border-2 border-[#0E0E0E]">
+                                                <img src="assets/img/th-12/testimonial-user-img-3.png"
+                                                    alt="testimonial-user-img-3" width="60" height="60"
+                                                    class="h-full w-full" />
+                                            </div>
+                                            <div class="text-xl font-semibold capitalize text-[#0E0E0E]">
+                                                Robert Mack
+                                                <span class="block text-lg font-normal">Instagrammer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Item -->
+                        </div>
+                        <!-- Testimonial List -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: TESTIMONIALS Section End :::... -->
+
+            <!-- Horizontal Text Slider -->
+            <div
+                class="overflow-hidden bg-[#0E0E0E] py-5 font-Filson text-3xl font-semibold uppercase leading-[1.4] tracking-[1px] text-[#FEF7E6]">
+                <!-- Horizontal Slider Block-->
+                <div class="horizontal-slide-from-right-to-left flex gap-x-[30px]">
+                    <span class="flex whitespace-nowrap">We've signed a new customer
+                    </span>
+                    <img src="assets/img/logos/supportable_primary_logo.svg" alt="dial-star" width="37" height="35" />
+                    <span class="flex whitespace-nowrap">Announcing a new integration
+                    </span>
+                    <img src="assets/img/logos/supportable_primary_logo.svg" alt="dial-star" width="37" height="35" />
+                    <span class="flex whitespace-nowrap">We've signed a new customer
+                    </span>
+                    <img src="assets/img/logos/supportable_primary_logo.svg" alt="dial-star" width="37" height="35" />
+                    <span class="flex whitespace-nowrap">Announcing a new integration
+                    </span>
+                    <img src="assets/img/logos/supportable_primary_logo.svg" alt="dial-star" width="37" height="35" />
+                    <span class="flex whitespace-nowrap">We've signed a new customer
+                    </span>
+                    <img src="assets/img/logos/supportable_primary_logo.svg" alt="dial-star" width="37" height="35" />
+                    <span class="flex whitespace-nowrap">Announcing a new integration
+                    </span>
+                    <img src="assets/img/logos/supportable_primary_logo.svg" alt="dial-star" width="37" height="35" />
+                </div>
+                <!-- Horizontal Slider Block-->
+            </div>
+            <!-- Horizontal Text Slider -->
+
+            <!--...::: INDUSTRIES Section Start :::... -->
+            <div class="section-topic mt-8">
+                <div class="relative">
+                    <!-- Section Space -->
+                    <div class="section-space-bottom">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <!-- Section Content Wrapper -->
+                            <div class="jos mb-[60px] xl:mb-20">
+                                <!-- Section Content Block -->
+                                <div class="mx-auto max-w-[636px]">
+                                    <h2 class="text-center font-Filson -tracking-[1px]">
+                                        These are the industries we support:
+                                    </h2>
+                                </div>
+                                <!-- Section Content Block -->
+                            </div>
+                            <!-- Section Content Wrapper -->
+                        </div>
+                        <!-- Section Container -->
+
+                        <!-- INDUSTRIES Area -->
+                        <div>
+                            <!-- Ticket Wrapper -->
+                            <div class="flex flex-row flex-wrap py-5">
+                                <!-- Ticket Content -->
+                                <div
+                                    class="mx-3 flex flex-row flex-wrap items-center justify-normal gap-x-6 whitespace-nowrap">
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-right" data-jos_delay="0"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Substance Use Rehabilitation
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-right" data-jos_delay="0.1"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Substance Abuse Treatment
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-right" data-jos_delay="0.2"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Mental Health Clinics
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-right" data-jos_delay="0.3"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Home and Community-based Services (HCBS)
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-right" data-jos_delay="0.4"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Foster Care and Community Residential Services
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-right" data-jos_delay="0.5"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Assisted and Customized Living
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-right" data-jos_delay="0.6"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Nursing Homes
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-right" data-jos_delay="0.7"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Intensive Residential Treatment Services (IRTS)
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-right" data-jos_delay="0.8"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Daycare Centers (Adult and Child)
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-right" data-jos_delay="0.9"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Eating Disorder Clinics and Residences
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-left" data-jos_delay="0"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Autism Spectrum Disorder Services or Residences
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-left" data-jos_delay="0.1"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Youth Residential Treatment
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-left" data-jos_delay="0.2"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Youth Rehabilitation Services
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-left" data-jos_delay="0.3"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Partial Hospitalization Programs (PHP)
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-left" data-jos_delay="0.4"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Day Treatment Services
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-left" data-jos_delay="0.5"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Vocational Rehabilitation
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                    <!-- Ticket Tag -->
+                                    <div data-jos_animation="fade-left" data-jos_delay="0.6"
+                                        class="jos relative z-10 block rounded-[50px] border-2 border-b-[5px] border-ColorBlack bg-industry px-6 py-2 text-center text-base font-bold text-ColorBlack md:py-4"
+                                        style="margin:15px 0px 15px 0px">
+                                        Day Training & Habilitation
+                                    </div>
+                                    <!-- Ticket Tag -->
+                                </div>
+                                <!-- Ticket Content -->
+                            </div>
+                            <!-- Ticket Wrapper -->
+                        </div>
+                        <!-- INDUSTRIES Area -->
+                    </div>
+                    <!-- Section Space -->
+                </div>
+            </div>
+            <!--...::: INDUSTRIES Section End :::... -->
+
+            <!--...::: FORM Section Start :::... -->
+            <section class="section-cta">
+                <!-- Section Container -->
+                <div class="container-default">
+                    <div class="relative z-10 rounded-[10px] bg-ColorLightYellow">
+                        <!-- Section Space -->
+                        <div class="section-space">
+                            <div class="px-5 sm:px-10">
+                                <!-- Section Content Wrapper -->
+                                <div class="jos mb-8 lg:mb-[50px]">
+                                    <!-- Section Content Block -->
+
+                                    <!--...::: Contact Section Start :::... -->
+                                    <div class="section-contact">
+                                        <!-- Section Space -->
+                                        <div class="section-space">
+                                            <!-- Section Container -->
+                                            <div class="container-default">
+                                                <!-- Contact Form Block -->
+                                                <div class="mx-auto max-w-[700px] mb-8">
+                                                    <div class="mb-5">
+                                                        <h2
+                                                            class="text-center font-Filson text-4xl font-bold leading-[1.16] -tracking-[0.5px] text-[#0E0E0E] lg:text-5xl xl:text-[32px] xxl:text-[40px]">
+                                                            Get your client acquisition process under control
+                                                        </h2>
+                                                    </div>
+                                                    <p class="text-center text-[#2c2c2c]">
+                                                        We'd love to work with you and guide you through our
+                                                        process.<br />
+                                                        Reach out to us <span class="highlight-underline">today</span>
+                                                        and someone from our team will contact you
+                                                        right away.
+                                                    </p>
+                                                </div>
+                                                <div id='crmWebToEntityForm'
+                                                    class="crmWebToEntityForm jos mx-auto max-w-[996px]">
+                                                    <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+                                                    <form id='webform' action='https://crm.zoho.com/crm/WebToLeadForm'
+                                                        name=WebToLeads5231866000013824041 method='POST'
+                                                        onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5231866000013824041()'
+                                                        accept-charset='UTF-8'>
+                                                        <input type='text' style='display:none;' name='xnQsjsdp'
+                                                            value='9d3c199cb771d30704c9da214e9042b0389409bceaf579b9e6d18f856b150884'></input>
+                                                        <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+                                                        <input type='text' style='display:none;' name='xmIwtLD'
+                                                            value='10637e4e754c3ffd6ffa4fa2428a74126f9e2f7a4dcc1d244dbd6c158309fdb5d6bb7e0e28e8c45934688bf4c2f98078'></input>
+                                                        <input type='text' style='display:none;' name='actionType'
+                                                            value='TGVhZHM='></input>
+                                                        <input type='text' style='display:none;' name='returnURL'
+                                                            value='https&#x3a;&#x2f;&#x2f;supportableapp.com&#x2f;'>
+                                                        </input>
+                                                        <!-- HIDDEN FIELDS -->
+                                                        <div>
+                                                            <div style="display: none;" class='zcwf_row wfrm_fld_dpNn'>
+                                                                <div class='zcwf_col_lab'
+                                                                    style='font-size:12px; font-family: Arial;'><label
+                                                                        for='Lead_Status'>Lead
+                                                                        Status</label></div>
+                                                                <div class='zcwf_col_fld'><select
+                                                                        class='zcwf_col_fld_slt' id='Lead_Status'
+                                                                        name='Lead Status'>
+                                                                        <option selected value='Engaging'>Engaging
+                                                                        </option>
+                                                                    </select>
+                                                                    <div class='zcwf_col_help'></div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: none;" class='zcwf_row wfrm_fld_dpNn'>
+                                                                <div class='zcwf_col_lab'
+                                                                    style='font-size:12px; font-family: Arial;'><label
+                                                                        for='Lead_Source'>Lead
+                                                                        Source</label></div>
+                                                                <div class='zcwf_col_fld'><select
+                                                                        class='zcwf_col_fld_slt' id='Lead_Source'
+                                                                        name='Lead Source'>
+                                                                        <option selected
+                                                                            value='Supportable&#x20;Website'>Supportable
+                                                                            Website</option>
+                                                                    </select>
+                                                                    <div class='zcwf_col_help'></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- From Group List -->
+                                                        <div class="flex flex-col gap-6">
+                                                            <div class="grid grid-cols-2 gap-6">
+                                                                <!-- first name Item-->
+                                                                <div>
+                                                                    <label for="First_Name"
+                                                                        class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">First
+                                                                        Name <span
+                                                                            class="text-ColorRed">*</span></label>
+                                                                    <input type='text' id='First_Name' name='First Name'
+                                                                        maxlength='40'
+                                                                        placeholder="What's your first name?"
+                                                                        class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                        required />
+                                                                    <div class='zcwf_col_help'></div>
+                                                                </div>
+                                                                <!-- last name Item-->
+                                                                <div>
+                                                                    <label for="Last_Name"
+                                                                        class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Last
+                                                                        Name <span
+                                                                            class="text-ColorRed">*</span></label>
+                                                                    <input type='text' id='Last_Name' name='Last Name'
+                                                                        maxlength='80'
+                                                                        placeholder="What's your last name?"
+                                                                        class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                        required />
+                                                                </div>
+
+                                                                <!-- Form Group Item-->
+                                                            </div>
+                                                            <div class="grid grid-cols-2 gap-6">
+                                                                <!-- job title Item -->
+                                                                <div>
+                                                                    <label for="Designation"
+                                                                        class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Job
+                                                                        Title <span class="text-ColorRed">*</span>
+                                                                    </label>
+                                                                    <input type='text' id='Designation'
+                                                                        name='Designation' maxlength='100'
+                                                                        placeholder="What's your title?"
+                                                                        class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                        required />
+                                                                </div>
+                                                                <div>
+                                                                    <label for="Company"
+                                                                        class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Company
+                                                                        Name <span
+                                                                            class="text-ColorRed">*</span></label>
+                                                                    <input type='text' id='Company' name='Company'
+                                                                        maxlength='200'
+                                                                        placeholder="Who do you work for?"
+                                                                        class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                        required />
+                                                                </div>
+                                                            </div>
+                                                            <div class="grid grid-cols-2 gap-6">
+                                                                <!-- Form Group Item-->
+                                                                <div>
+                                                                    <label for="Email"
+                                                                        class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Email
+                                                                        <span class="text-ColorRed">*</span>
+                                                                    </label>
+                                                                    <input type='text' ftype='email'
+                                                                        autocomplete='false' id='Email' name='Email'
+                                                                        placeholder="Email address please"
+                                                                        class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                        required />
+                                                                </div>
+                                                                <!-- Form Group Item-->
+                                                                <!-- Form Group Item-->
+                                                                <div>
+                                                                    <label for="Phone"
+                                                                        class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Phone
+                                                                        Number <span
+                                                                            class="text-ColorRed">*</span></label>
+                                                                    <input type="tel" id='Phone' name='Phone'
+                                                                        placeholder="What number can we best reach you at?"
+                                                                        class="w-full rounded-[50px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"
+                                                                        required />
+                                                                </div>
+                                                                <!-- Form Group Item-->
+                                                            </div>
+                                                            <div>
+                                                                <label for="LEADCF8"
+                                                                    class="mb-[10px] block text-left font-semibold text-ColorBlack font-Filson">Anything
+                                                                    you'd like us to know?</label>
+                                                                <textarea id='LEADCF8' name='LEADCF8'
+                                                                    placeholder="Tell us about it..."
+                                                                    class="min-h-[130px] w-full rounded-[30px] border border-ColorBlack/50 bg-ColorOffWhite px-[30px] py-[15px] outline-none transition-all duration-300 placeholder:text-ColorBlack/50 focus:border-ColorTeal"></textarea>
+                                                            </div>
+                                                            <!-- Form Group Item-->
+                                                        </div>
+                                                        <!-- From Group List -->
+                                                        <div class="flex mt-6">
+                                                            <a class="group relative z-10 inline-block">
+                                                                <button type="submit" id='formsubmit' value='Submit'
+                                                                    title='Submit'
+                                                                    class="btn is-large rounded-[3px] border-2 border-[#0E0E0E] bg-brandPurple text-white">
+                                                                    Submit Form
+                                                                </button>
+                                                                <div
+                                                                    class="absolute inset-0 -z-10 translate-x-[5px] translate-y-[5px] rounded-[3px] bg-[#0E0E0E] transition-all duration-300 ease-linear group-hover:translate-x-0 group-hover:translate-y-0">
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <!-- Contact Form Block -->
+                                            </div>
+                                            <!-- Section Container -->
+                                        </div>
+                                        <!-- Section Space -->
+                                    </div>
+                                    <!--...::: Contact Section End :::... -->
+                                    <!-- Section Content Block -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section Space -->
+
+                        <!-- Background Shape -->
+                        <img src="assets/img/elements/home-12-cta-shape.svg" alt="home-12-cta-shape.svg" width="72"
+                            height="106" class="absolute right-32 top-8 -z-10 hidden xl:inline-block" />
+                    </div>
+                </div>
+                <!-- Section Container -->
+                <!-- Section Background -->
+            </section>
+            <!--...::: FORM Section End :::... -->
+
+        </main>
+
+        <!--...::: Footer Section Start :::... -->
+        <footer class="section-footer">
+            <!-- Footer Area Center -->
+            <div class="text-[#2C2C2C]">
+                <!-- Footer Center Spacing -->
+                <div class="py-[60px] lg:py-20">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Footer Widget List -->
+                        <div
+                            class="grid gap-x-4 lg:gap-x-16 gap-y-10 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-[1fr_repeat(3,_auto)] xl:lg:grid-cols-[1fr_repeat(4,_auto)]  xl:gap-x-20">
+                            <!-- Footer Widget Item -->
+                            <div class="flex flex-col gap-y-7 md:col-span-4 lg:col-span-1">
+                                <!-- Footer Logos -->
+                                <div class="footer-logos">
+                                    <a href="index.html" class="mr-[10px]">
+                                        <img src="assets/img/logos/supportable-horizontal.svg" alt="Supportable"
+                                            width="200" height="auto" />
+                                    </a>
+                                </div>
+                                <!-- Footer Content -->
+                                <div>
+                                    <!-- Footer About Text -->
+                                    <div class="lg:max-w-[320px]">
+                                        Supportable is a product of Dashboard Traction.
+                                        We have all the relevant socials that you can follow us on.
+                                    </div>
+                                    <!-- Footer Social Link -->
+                                    <div class="mt-10 flex flex-wrap gap-5">
+                                        <a href="https://www.youtube.com/channel/UC4m8uQlDWOlQwcg8B9neVaw"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-[#0E0E0E]/10 text-sm text-[#0E0E0E] transition-all duration-300 hover:bg-ColorPurple hover:text-white"
+                                            aria-label="youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/supportable/" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-[#0E0E0E]/10 text-sm text-[#0E0E0E] transition-all duration-300 hover:bg-ColorPurple hover:text-white"
+                                            aria-label="linkedin">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/SupportableApp" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-[#0E0E0E]/10 text-sm text-[#0E0E0E] transition-all duration-300 hover:bg-ColorPurple hover:text-white"
+                                            aria-label="facebook">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://twitter.com/SupportableApp" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-[#0E0E0E]/10 text-sm text-[#0E0E0E] transition-all duration-300 hover:bg-ColorPurple hover:text-white"
+                                            aria-label="x-twitter">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Footer Content -->
+                            </div>
+                            <!-- Footer Widget Item -->
+
+                            <!-- Footer Widget Item -->
+                            <div class="flex flex-col gap-y-7 md:col-span-1 lg:col-span-1">
+                                <!-- Footer Widget Title -->
+                                <div class="text-xl font-semibold capitalize text-[#0E0E0E]">
+                                    Primary Pages
+                                </div>
+                                <!-- Footer Navbar -->
+                                <ul class="flex flex-col gap-y-[10px] capitalize">
+                                    <li>
+                                        <a href="index.html"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">About
+                                            Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="features.html"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Footer Widget Item -->
+
+                            <!-- Footer Widget Item -->
+                            <div class="flex flex-col gap-y-6 md:col-span-1 lg:col-span-1">
+                                <!-- Footer Title -->
+                                <div class="text-xl font-semibold capitalize text-[#0E0E0E]">
+                                    More Resources
+                                </div>
+                                <!-- Footer Title -->
+
+                                <!-- Footer Navbar -->
+                                <ul class="flex flex-col gap-y-[10px] capitalize">
+                                    <li>
+                                        <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">Privacy
+                                            policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">Terms
+                                            & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"
+                                            class="text-[#2C2C2C] underline-offset-4 transition-all duration-300 ease-linear hover:underline">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Footer Widget Item -->
+                        </div>
+                        <!-- Footer Widget List -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Footer Center Spacing -->
+            </div>
+            <!-- Footer Area Center -->
+            <div class="horizontal-line bg-ColorBlack"></div>
+            <!-- Footer Bottom -->
+            <div>
+                <!-- Footer Bottom Spacing -->
+                <div class="py-10">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <div class="text-center">
+                            &copy; Copyright 2024, All Rights Reserved by Supportable
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Footer Bottom Spacing -->
+            </div>
+            <!-- Footer Bottom -->
+        </footer>
+        <!--...::: Footer Section End :::... -->
+    </div>
+
+    <!-- Lottie js -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+    <!--Vendor js-->
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form.js"></script>
+
+    <!-- Zoho tracking -->
+    <script id='wf_anal'
+        src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=dc9ea72fafa851286c2b89c1b43c866f646ddc87698c1d101cca5bdee9f84647717d447ed22d617db1ddcb179da96a13gid953c154311d554863ea64d250d102f7f76eaf31c8fb282ae35f3a2de78f6127egid425136b6186e6f9c9d854ff2d1351e7665bf7953e246350a8483c0ae69d233a4gid1162f906e3db03e26a5a23a53aed69c6581c3c53904b6d7cee9ac1964196bc1b&tw=a478f1e899253deb8093eb45a55d1e436edbceaded4e04931bd004ee65fee847'></script>
+</body>
+
+</html>
