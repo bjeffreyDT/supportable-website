@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 615 150">
+<svg id="hero-highlight" data-name="hero-highlight" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 410 100">
   <defs>
     <style>
-      .cls-1 {
+      #hero-path {
         fill: none;
         stroke: #0cc;
+        stroke-opacity: 80%;
         stroke-linecap: round;
         stroke-miterlimit: 10;
-        stroke-width: 6px;
+        stroke-width: 5px;
+        stroke-dasharray: 1388.7738037109375;
+        stroke-dashoffset: 1388.7738037109375;
+        transition: stroke-dashoffset 2.5s ease;
+        animation: draw 2.5s ease-in-out;
+        animation-fill-mode: forwards
+      }
+      
+      @keyframes draw {
+        0% {
+            stroke-dashoffset: 1388.7738037109375;
+        }
+      
+        50% {
+            stroke-dashoffset: 1388.7738037109375;
+        }
+      
+        100% {
+            stroke-dashoffset: 0;
+        }
+      
       }
     </style>
   </defs>
-  <path class="cls-1" d="M207.5,18.5s-60-14-104-11S14.4,29.1,12,65c-4,61,70,69,161.5,72.5,96.9,3.7,385.4,15.1,424.5-31.5,26-31-.5-86.5-90.5-91.5s-241-8-310-3l-69,5"/>
+  <path id="hero-path" d="M139.2,14.1s-38.6-9-67-7.1c-28.3,1.9-57.4,13.9-58.9,37-2.6,39.3,45.1,44.4,104,46.7,62.4,2.4,248.2,9.7,273.4-20.3,16.7-20-.3-55.7-58.3-58.9-58-3.2-155.2-5.2-199.6-1.9l-44.4,3.2"/>
 </svg>

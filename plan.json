@@ -1,0 +1,162 @@
+{
+    "id": "-5909746709284134280",
+    "customerId": "1354353",
+    "controlNumber": "64570954332",
+    "status": "Complete",
+    "statusCode": "4",
+    "createdDate": "2024-06-12T23:17:41.000+0000",
+    "updatedDate": "2024-06-12T23:17:40.000+0000",
+    "expirationDate": "2024-06-13T23:17:40.000+0000",
+    "asOfDate": "2024-06-12T04:00:00.000+0000",
+    "requestedServiceType": [
+      {
+        "code": "A8",
+        "value": "Psychiatric - Outpatient"
+      }
+    ],
+    "subscriber": {
+      "firstName": "KENNETH",
+      "middleName": "A",
+      "lastName": "FRANCESCONI",
+      "memberId": "KLYBD3339074",
+      "caseNumber": "0R0Q"
+    },
+    "patient": {
+      "firstName": "SHARI",
+      "lastName": "FRANCESCONI",
+      "subscriberRelationship": "Spouse",
+      "subscriberRelationshipCode": "01",
+      "gender": "Female",
+      "genderCode": "F",
+      "birthDate": "1965-04-10T05:00:00.000+0000",
+      "updateYourRecords": true
+    },
+    "payer": {
+      "name": "ANTHEM - CA",
+      "payerId": "040",
+      "responseName": "ANTHEM BLUE CROSS",
+      "responsePayerId": "040",
+      "thirdPartyAdministrator": false
+    },
+    "requestingProvider": {
+      "lastName": "AVAILITY",
+      "npi": "1407578537",
+      "taxId": "932224170"
+    },
+    "plans": [
+      {
+        "status": "Active Coverage",
+        "statusCode": "1",
+        "groupNumber": "276372M004",
+        "groupName": "BAY AREA DELIVERY DRIVERS SECURITY FUND",
+        "planNumber": "040",
+        "planName": "BAY AREA DELIVERY DRIVERS SECURITY FUND",
+        "coverageStartDate": "2015-10-01T04:00:00.000+0000",
+        "coverageEndDate": "9999-12-31T05:00:00.000+0000",
+        "benefits": [
+          {
+            "name": "Health Benefit Plan Coverage",
+            "type": "30",
+            "status": "Active Coverage",
+            "statusCode": "1",
+            "statusDetails": {
+              "noNetwork": [
+                {
+                  "status": "Active Coverage",
+                  "statusCode": "1",
+                  "insuranceType": "Preferred Provider Organization (PPO)",
+                  "insuranceTypeCode": "PR",
+                  "level": "Dependents Only",
+                  "levelCode": "DEP",
+                  "description": "PPO PRUDENT BUYER INCENTIVE"
+                }
+              ]
+            },
+            "amounts": {
+              "outOfPocket": {
+                "notApplicableNetwork": [
+                  {
+                    "amount": "99.94",
+                    "units": "USD",
+                    "amountTimePeriod": "Year to Date",
+                    "amountTimePeriodCode": "24",
+                    "remaining": ".06",
+                    "remainingTimePeriod": "Remaining",
+                    "remainingTimePeriodCode": "29",
+                    "total": "100",
+                    "totalTimePeriod": "Calendar Year",
+                    "totalTimePeriodCode": "23",
+                    "level": "Individual",
+                    "levelCode": "IND",
+                    "benefitBeginDate": "2022-08-01T04:00:00.000+0000",
+                    "benefitEndDate": "9999-12-31T05:00:00.000+0000",
+                    "payerNotes": [
+                      "EXCLUDES DEDUCTIBLE AND COPAYMENTS"
+                    ]
+                  }
+                ]
+              },
+              "deductibles": {
+                "notApplicableNetwork": [
+                  {
+                    "amount": "25",
+                    "units": "USD",
+                    "amountTimePeriod": "Year to Date",
+                    "amountTimePeriodCode": "24",
+                    "remaining": "0",
+                    "remainingTimePeriod": "Remaining",
+                    "remainingTimePeriodCode": "29",
+                    "total": "25",
+                    "totalTimePeriod": "Calendar Year",
+                    "totalTimePeriodCode": "23",
+                    "level": "Individual",
+                    "levelCode": "IND",
+                    "coverageStartDate": "2024-01-01T05:00:00.000+0000",
+                    "coverageEndDate": "2024-12-31T05:00:00.000+0000"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "Psychiatric - Outpatient",
+            "type": "A8",
+            "status": "Active Coverage",
+            "statusCode": "1",
+            "statusDetails": {
+              "notApplicableNetwork": [
+                {
+                  "status": "Active Coverage",
+                  "statusCode": "1",
+                  "benefitBeginDate": "2022-08-01T04:00:00.000+0000",
+                  "benefitEndDate": "9999-12-31T05:00:00.000+0000"
+                }
+              ]
+            }
+          }
+        ],
+        "insuranceType": "Preferred Provider Organization (PPO)",
+        "insuranceTypeCode": "PR",
+        "payerNotes": [
+          {
+            "type": "Disclaimer",
+            "typeCode": "P",
+            "message": "UNLESS OTHERWISE REQUIRED BY STATE LAW, THIS NOTICE IS NOT A GUARANTEE OF PAYMENT. BENEFITS ARE SUBJECT TO ALL CONTRACT LIMITS AND THE MEMBER'S STATUS ON THE DATE OF SERVICE. ACCUMULATED AMOUNTS SUCH AS DEDUCTIBLE MAY CHANGE AS ADDITIONAL CLAIMS ARE PROCESSED."
+          }
+        ]
+      }
+    ],
+    "supplementalInformation": {
+      "professionalPatientCostEstimator": false,
+      "institutionalPatientCostEstimator": false,
+      "patientCareSummary": false,
+      "assessmentCarePlan": false,
+      "outOfArea": false,
+      "requestLtssccAmount": false,
+      "erReferralCompleted": false,
+      "functionalIdentifierCode": "HB",
+      "applicationSenderCode": "040",
+      "eligibleForCOB": false
+    },
+    "hasHRAInformation": false
+  }
